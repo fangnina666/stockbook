@@ -19,7 +19,7 @@ jobs:
         run: |
           git clone https://github.com/fangnina666/gitbook.git temp_gitbook
           mkdir -p reports_his
-          cp -r temp_gitbook/reports_his/* reports_his/ || true
+          cp -r temp_gitbook/reports_his/* ./ || true
           rm -rf temp_gitbook
       
       - name: Commit and push changes
