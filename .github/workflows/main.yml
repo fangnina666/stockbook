@@ -1,46 +1,26 @@
-name: Sync Files from Another Repo
+name: Sync from public repo
+
 on:
   schedule:
     - cron: '0 0 * * *'  # 每天執行一次
-  workflow_dispatch:  # 也可以手動觸發
+  workflow_dispatch:     # 允許手動觸發
+
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout target repo
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.token }}
-      - name: Checkout source repo
-        uses: actions/checkout@v4
-        with:
-          repository: fangnina666/stock_legal_info  # 來源 repository
-          path: stock_legal_info
-          token: ${{ secrets.token  }}
-          
-      - name: Checkout source repo2
-        uses: actions/checkout@v4
-        with:
-          repository: fangnina666/stock_wave_score  # 來源 repository
-          path: stock_wave_score
-          token: ${{ secrets.token  }}
-      - name: Copy result MD files only
+      - uses: actions/checkout@v4
+      
+      - name: Sync from public repo
         run: |
-          mkdir -p ./reports_his # 建立目標資料夾
-          # 只複製 result 開頭的 .md 檔案
-          find stock_legal_info/reports_his -name "result*.md" -type f -exec cp {} ./reports_his/ \;
-          find stock_wave_score/reports_his -name "result*.md" -type f -exec cp {} ./reports_his/ \;
-          rm -rf stock_legal_info
-          rm -rf stock_wave_score
-      - name: Commit and push if changed
+          git clone https://github.com/fangnina666/gitbook.git temp_gitbook
+          cp -r temp_gitbook/reports_his/* reports_his/
+          rm -rf temp_gitbook
+      
+      - name: Commit and push changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git add reports_his/
-          
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "chore: sync result MD files from stock_legal_info at $(date -u +'%Y-%m-%d %H:%M:%S') UTC"
-            git push
-          fi
+          git commit -m "Sync from public repo" || echo "No changes to commit"
+          git push
