@@ -1,4 +1,6 @@
 name: Sync from public repo
+permissions:
+  contents: write
 
 on:
   schedule:
