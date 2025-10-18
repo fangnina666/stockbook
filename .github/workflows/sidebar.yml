@@ -39,7 +39,6 @@ jobs:
           [ -f .nojekyll ] || touch .nojekyll
           if [ ! -f README.md ]; then
             cat > README.md << 'MD'
-# 歡迎來到 StockBook
           fi
 
       - name: Generate _sidebar.md from reports_his
