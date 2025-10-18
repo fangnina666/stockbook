@@ -1,21 +1,33 @@
----
-layout: default
-title: 報告索引
----
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>StockBook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Docsify 樣式主題 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
+</head>
+<body>
+  <div id="app">Loading...</div>
 
-<style>
-.wrap { display: grid; grid-template-columns: 280px 1fr; gap: 1rem; align-items: start; }
-@media (max-width: 900px){ .wrap { grid-template-columns: 1fr; } }
-</style>
+  <script>
+    window.$docsify = {
+      name: 'StockBook',
+      loadSidebar: true,     // 讀取 _sidebar.md
+      subMaxLevel: 2,        // 側欄顯示標題層級
+      search: {              // 全文搜尋設定
+        maxAge: 86400000,    // 一天快取
+        paths: 'auto',       // 自動索引所有頁面
+        placeholder: '搜尋報告…',
+        noData: '沒有找到結果',
+        depth: 6
+      }
+    }
+  </script>
 
-<div class="wrap">
-  <aside>
-    {% include sidebar.html %}
-  </aside>
-
-  <section>
-    # Daily Stock Reports
-    這裡是首頁簡介（可放公告、使用說明等）。
-  </section>
-</div>
-
+  <!-- Docsify 主程式 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <!-- 搜尋外掛 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+</body>
+</html>
