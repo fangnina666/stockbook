@@ -36,14 +36,10 @@ jobs:
 
       - name: Ensure Docsify essentials (.nojekyll & README.md)
         run: |
-          # 讓 _sidebar.md 不被 Jekyll 擋
           [ -f .nojekyll ] || touch .nojekyll
-          # Docsify 首頁
           if [ ! -f README.md ]; then
             cat > README.md << 'MD'
 # 歡迎來到 StockBook
-- 請從左側選擇報告，或前往 [reports_his](#/reports_his/)。
-MD
           fi
 
       - name: Generate _sidebar.md from reports_his
@@ -51,12 +47,9 @@ MD
         run: |
           set -euo pipefail
           SIDEBAR_PATH="_sidebar.md"
-
           echo "Generating ${SIDEBAR_PATH} from reports_his/*.md ..."
-
-          # 依檔名字典序反向；如需按時間可改用 %T@ 排序
-          mapfile -t FILES < <(find reports_his -maxdepth 1 -type f -name "*.md" -printf "%f\n" | LC_ALL=C sort -r)
-
+          # 依「最後修改時間」排序（新→舊）
+          mapfile -t FILES < <(find reports_his -maxdepth 1 -type f -name "*.md" -printf "%T@ %f\n" | sort -nr | awk '{ $1=""; sub(/^ /,""); print }')
           {
             echo "- [首頁](/README.md)"
             echo "- 報告列表"
@@ -70,7 +63,6 @@ MD
               done
             fi
           } > "${SIDEBAR_PATH}"
-
           echo "✅ ${SIDEBAR_PATH} generated."
 
       - name: Commit and push if changed (reports_his + _sidebar.md + README.md + .nojekyll)
@@ -78,7 +70,6 @@ MD
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add reports_his/ _sidebar.md README.md .nojekyll || true
-
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
