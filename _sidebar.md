@@ -1,5 +1,7 @@
 - [首頁](/README.md)
 - 報告列表
+  - [result_t86_precomputed_20251017](/reports_his/result_t86_precomputed_20251017.md)
+  - [result_t86_osint_20251017](/reports_his/result_t86_osint_20251017.md)
   - [result_us_osint_gemini_20251017_231354](/reports_his/result_us_osint_gemini_20251017_231354.md)
   - [result_us_osint_gemini_20251016_231421](/reports_his/result_us_osint_gemini_20251016_231421.md)
   - [result_us_osint_gemini_20251015_231336](/reports_his/result_us_osint_gemini_20251015_231336.md)
