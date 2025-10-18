@@ -36,12 +36,13 @@ jobs:
 
       - name: Ensure Docsify essentials (.nojekyll & README.md)
         run: |
+          set -euo pipefail
           [ -f .nojekyll ] || touch .nojekyll
           if [ ! -f README.md ]; then
-            cat > README.md << 'MD'
-            # 歡迎來到 StockBook
-             - 從左側選擇報告，或前往 [reports_his](#/reports_his/)。
-             MD
+            {
+              printf '%s\n' '# 歡迎來到 StockBook'
+              printf '%s\n' '- 從左側選擇報告，或前往 [reports_his](#/reports_his/)。'
+            } > README.md
           fi
 
       - name: Generate _sidebar.md from reports_his
