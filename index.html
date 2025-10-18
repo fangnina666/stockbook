@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <title>StockBook</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- 這行只是主題 CSS，沒 JS 會一直顯示 Loading… -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
 </head>
 <body>
@@ -13,7 +12,7 @@
   <script>
     window.$docsify = {
       name: 'StockBook',
-      basePath: '/stockbook/',   // 你的 project pages 路徑正確
+      basePath: '/stockbook/',   // 專案 Pages 的子路徑
       loadSidebar: true,
       subMaxLevel: 2,
       search: {
@@ -22,11 +21,11 @@
         noData: '沒有找到結果',
         maxAge: 86400000
       }
-      // routerMode 預設是 hash（#/），不需要 404.html
+      // 預設 router 是 hash（#/），不需要 404.html
     };
   </script>
 
-  <!-- 👇 這兩行是關鍵：載入 docsify 與 search 插件 -->
+  <!-- 這兩行一定要有 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
