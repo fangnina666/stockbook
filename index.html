@@ -12,8 +12,8 @@
   <script>
     window.$docsify = {
       name: 'StockBook',
-      basePath: '/stockbook/',
-      loadSidebar: true,          // 讀取 _sidebar.md
+      basePath: '/stockbook/',      // 專案網站必備：讓 /README.md 這類連結指向 /stockbook/ 下
+      loadSidebar: true,            // 讀取根目錄的 _sidebar.md
       subMaxLevel: 2,
       search: {
         paths: 'auto',
@@ -21,23 +21,12 @@
         noData: '沒有找到結果',
         maxAge: 86400000
       }
-      // 先不用 history 模式；穩定用 hash（/#/）
-      // routerMode: 'history'
-    }
+      // 想用無 # 的網址再開啟下行，並新增 404.html（目前先留著註解，使用 hash 模式最穩）
+      // ,routerMode: 'history'
+    };
   </script>
-  
-  <script>
-  window.$docsify = {
-    name: 'StockBook',
-    basePath: '/stockbook/',   // ★ 關鍵：專案子路徑
-    loadSidebar: true,
-    subMaxLevel: 2,
-    search: { paths: 'auto', placeholder: '搜尋報告…', noData: '沒有找到結果', maxAge: 86400000 }
-  }
-</script>
 
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
-
