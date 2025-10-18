@@ -1,4 +1,4 @@
-source: ./reports_his
+source: .
 destination: ./_site
 title: daily_stock_report
 description: 網站描述
