@@ -5,6 +5,10 @@
   <title>StockBook</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
+  <style>
+    .sidebar-toggle { display: block !important; z-index: 9999; }
+    .sidebar { z-index: 9998; }
+  </style>
 </head>
 <body>
   <div id="app">Loading…</div>
@@ -12,8 +16,8 @@
   <script>
     window.$docsify = {
       name: 'StockBook',
-      basePath: '/stockbook/',      // ★ 這裡設定專案路徑
-      loadSidebar: true,
+      basePath: '/stockbook/',      // 專案子路徑
+      loadSidebar: true,            // 讀取 _sidebar.md
       subMaxLevel: 2,
       search: {
         paths: 'auto',
@@ -21,7 +25,9 @@
         noData: '沒有找到結果',
         maxAge: 86400000
       }
-    }
+      // 想用無 # 漂亮網址再開啟並加 404.html：
+      // ,routerMode: 'history'
+    };
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
