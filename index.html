@@ -25,6 +25,16 @@
       // routerMode: 'history'
     }
   </script>
+  
+  <script>
+  window.$docsify = {
+    name: 'StockBook',
+    basePath: '/stockbook/',   // ★ 關鍵：專案子路徑
+    loadSidebar: true,
+    subMaxLevel: 2,
+    search: { paths: 'auto', placeholder: '搜尋報告…', noData: '沒有找到結果', maxAge: 86400000 }
+  }
+</script>
 
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
