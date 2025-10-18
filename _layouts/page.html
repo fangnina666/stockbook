@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<style>
+.wrap { display: grid; grid-template-columns: 280px 1fr; gap: 1rem; align-items: start; }
+@media (max-width: 900px){ .wrap { grid-template-columns: 1fr; } }
+.box { background: transparent; }
+</style>
+
+<div class="wrap">
+  <aside class="box">
+    {% include sidebar.html %}
+  </aside>
+
+  <main class="box">
+    <p><a href="{{ "/" | relative_url }}">&larr; 回首頁</a></p>
+    <h1>{{ page.title | default: page.name | remove: ".md" }}</h1>
+    {{ content }}
+  </main>
+</div>
