@@ -1,0 +1,59 @@
+name: Generate _sidebar.md from reports_his
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # 每天 00:00 UTC（台灣 08:00）
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build_sidebar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate _sidebar.md
+        shell: bash
+        run: |
+          set -euo pipefail
+          SIDEBAR_PATH="_sidebar.md"   # 如果 index.html 在 /docs，改成 "docs/_sidebar.md"
+
+          echo "Generating ${SIDEBAR_PATH} from reports_his/*.md ..."
+
+          # 找出所有 .md 檔案，逆序排序
+          mapfile -t FILES < <(find reports_his -maxdepth 1 -type f -name "*.md" -printf "%f\n" | LC_ALL=C sort -r)
+
+          {
+            echo "- [首頁](/README.md)"
+            echo "- 報告列表"
+            if [ ${#FILES[@]} -eq 0 ]; then
+              echo "  - （目前沒有檔案）"
+            else
+              for f in "${FILES[@]}"; do
+                title="${f%.md}"
+                safe_path="reports_his/${f// /%20}"
+                echo "  - [${title}](/${safe_path})"
+              done
+            fi
+          } > "${SIDEBAR_PATH}"
+
+          echo "✅ ${SIDEBAR_PATH} generated."
+
+      - name: Commit and push if changed (_sidebar.md only)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _sidebar.md || true
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            TS="$(date -u +'%Y-%m-%d %H:%M:%S') UTC"
+            git commit -m "chore: regenerate _sidebar.md from reports_his at ${TS}"
+            git push
+          fi
