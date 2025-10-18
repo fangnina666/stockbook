@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>My Docs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'My Docs',
+      loadSidebar: true,          // 讀取 _sidebar.md
+      subMaxLevel: 2,             // 右側錨點層級
+      search: {                   // 全文搜尋（跨頁）
+        paths: 'auto',
+        placeholder: '搜尋整站…',
+        noData: '找不到結果',
+        depth: 6,
+        maxAge: 86400000
+      }
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+</body>
+</html>
 
