@@ -1,4 +1,4 @@
-name: Generate _sidebar.md from reports_his
+name: Sync reports_his & Generate _sidebar.md
 
 on:
   schedule:
@@ -9,23 +9,52 @@ permissions:
   contents: write
 
 jobs:
-  build_sidebar:
+  sync_and_build_sidebar:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout this repo
+      - name: Checkout target repo
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Generate _sidebar.md
+      - name: Clone public repo (sparse reports_his only)
+        run: |
+          git clone --depth 1 --filter=blob:none --sparse https://github.com/fangnina666/gitbook.git src
+          cd src
+          git sparse-checkout set reports_his
+          cd ..
+
+      - name: Sync to target reports_his (with delete)
+        run: |
+          mkdir -p reports_his
+          if [ -d src/reports_his ]; then
+            rsync -av --delete src/reports_his/ reports_his/
+          else
+            echo "WARN: src/reports_his not found; leaving reports_his as-is"
+          fi
+          rm -rf src
+
+      - name: Ensure Docsify essentials (.nojekyll & README.md)
+        run: |
+          # 讓 _sidebar.md 不被 Jekyll 擋
+          [ -f .nojekyll ] || touch .nojekyll
+          # Docsify 首頁
+          if [ ! -f README.md ]; then
+            cat > README.md << 'MD'
+# 歡迎來到 StockBook
+- 請從左側選擇報告，或前往 [reports_his](#/reports_his/)。
+MD
+          fi
+
+      - name: Generate _sidebar.md from reports_his
         shell: bash
         run: |
           set -euo pipefail
-          SIDEBAR_PATH="_sidebar.md"   # 如果 index.html 在 /docs，改成 "docs/_sidebar.md"
+          SIDEBAR_PATH="_sidebar.md"
 
           echo "Generating ${SIDEBAR_PATH} from reports_his/*.md ..."
 
-          # 找出所有 .md 檔案，逆序排序
+          # 依檔名字典序反向；如需按時間可改用 %T@ 排序
           mapfile -t FILES < <(find reports_his -maxdepth 1 -type f -name "*.md" -printf "%f\n" | LC_ALL=C sort -r)
 
           {
@@ -44,16 +73,16 @@ jobs:
 
           echo "✅ ${SIDEBAR_PATH} generated."
 
-      - name: Commit and push if changed (_sidebar.md only)
+      - name: Commit and push if changed (reports_his + _sidebar.md + README.md + .nojekyll)
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add _sidebar.md || true
+          git add reports_his/ _sidebar.md README.md .nojekyll || true
 
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
             TS="$(date -u +'%Y-%m-%d %H:%M:%S') UTC"
-            git commit -m "chore: regenerate _sidebar.md from reports_his at ${TS}"
+            git commit -m "chore: sync reports_his from gitbook & regenerate _sidebar.md at ${TS}"
             git push
           fi
