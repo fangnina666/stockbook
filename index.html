@@ -4,8 +4,10 @@
   <meta charset="UTF-8" />
   <title>StockBook</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Docsify theme -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
   <style>
+    /* 行動版一定顯示漢堡按鈕與抽屜層級 */
     .sidebar-toggle { display: block !important; z-index: 9999; }
     .sidebar { z-index: 9998; }
   </style>
@@ -15,22 +17,42 @@
 
   <script>
     window.$docsify = {
+      /* 站名(左上角) */
       name: 'StockBook',
-      basePath: '/stockbook/',      // 專案子路徑
-      loadSidebar: true,            // 讀取 _sidebar.md
+
+      /* 專案子路徑：你的站在 /stockbook/ 底下，務必加這行 */
+      basePath: '/stockbook/',
+
+      /* 側欄與目錄層級 */
+      loadSidebar: true,      // 讀取根目錄的 _sidebar.md
       subMaxLevel: 2,
+
+      /* 首頁：預設讀根目錄 README.md，你也可改成 'home.md' 等 */
+      homepage: 'README.md',
+
+      /* 404：讀取根目錄 _404.md（若不存在會顯示預設訊息） */
+      notFoundPage: true,
+
+      /* 其他常用體驗 */
+      auto2top: true,         // 切頁自動回頂
+      executeScript: false,   // 預設禁 JS
+
+      /* 站內全文搜尋 */
       search: {
         paths: 'auto',
         placeholder: '搜尋報告…',
         noData: '沒有找到結果',
         maxAge: 86400000
       }
-      // 想用無 # 漂亮網址再開啟並加 404.html：
+
+      // 想用無 # 的網址再開啟下行，並新增 404.html 做轉址（目前用 hash 最穩）
       // ,routerMode: 'history'
     };
   </script>
 
+  <!-- Docsify core -->
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <!-- Search plugin -->
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
