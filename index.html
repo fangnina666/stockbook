@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>StockBook</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Docsify 樣式主題 -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
 </head>
 <body>
-  <div id="app">Loading...</div>
+  <div id="app">Loading…</div>
 
   <script>
     window.$docsify = {
       name: 'StockBook',
-      loadSidebar: true,     // 讀取 _sidebar.md
-      subMaxLevel: 2,        // 側欄顯示標題層級
-      search: {              // 全文搜尋設定
-        maxAge: 86400000,    // 一天快取
-        paths: 'auto',       // 自動索引所有頁面
+      loadSidebar: true,          // 讀取 _sidebar.md
+      subMaxLevel: 2,
+      search: {
+        paths: 'auto',
         placeholder: '搜尋報告…',
         noData: '沒有找到結果',
-        depth: 6
+        maxAge: 86400000
       }
+      // 先不用 history 模式；穩定用 hash（/#/）
+      // routerMode: 'history'
     }
   </script>
 
-  <!-- Docsify 主程式 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <!-- 搜尋外掛 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
+
