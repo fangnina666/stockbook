@@ -4,30 +4,43 @@ permissions:
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 每天凌晨 12 點執行一次
-  workflow_dispatch:     # 允許手動觸發
+    - cron: '0 0 * * *'   # 每天 00:00 UTC（台灣 08:00）
+  workflow_dispatch:
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout target repo
+        uses: actions/checkout@v4
         with:
-          submodules: false
-      
-      - name: Sync from public repo
+          fetch-depth: 0
+
+      - name: Clone public repo (shallow)
         run: |
-          git clone https://github.com/fangnina666/gitbook.git temp_gitbook
+          git clone --depth 1 https://github.com/fangnina666/gitbook.git temp_gitbook
+
+      # 用 rsync 同步到 reports_his/，並刪除目標多餘檔
+      - name: Sync reports_his from source -> target (with delete)
+        run: |
           mkdir -p reports_his
-          cp -r temp_gitbook/reports_his/* ./ || true
+          if [ -d temp_gitbook/reports_his ]; then
+            rsync -av --delete temp_gitbook/reports_his/ reports_his/
+          else
+            echo "WARN: temp_gitbook/reports_his not found; leaving reports_his as-is"
+          fi
           rm -rf temp_gitbook
-      
+
       - name: Commit and push changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add reports_his/
-          git commit -m "Sync from public repo" || echo "No changes to commit"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            TS="$(date -u +'%Y-%m-%d %H:%M:%S') UTC"
+            git commit -m "chore: sync reports_his from fangnina666/gitbook at ${TS}"
+            git push
+          fi
+
