@@ -2,7 +2,7 @@ name: Sync reports_his & Generate _sidebar.md
 
 on:
   schedule:
-    - cron: '0 0 * * *'   # 每天 00:00 UTC（台灣 08:00）
+    - cron: '0 * * * *'   # 每天 00:00 UTC（台灣 08:00）
   workflow_dispatch:
 
 permissions:
