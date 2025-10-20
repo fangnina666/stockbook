@@ -1,5 +1,7 @@
 - [首頁](/README.md)
 - 報告列表
+  - [result_法人進出_20251020](/reports_his/result_法人進出_20251020.md)
+  - [result_法人偷偷買_20251020](/reports_his/result_法人偷偷買_20251020.md)
   - [result_法人進出_20251017](/reports_his/result_法人進出_20251017.md)
   - [result_法人偷偷買_20251017](/reports_his/result_法人偷偷買_20251017.md)
   - [result_us_osint_gemini_20251019_231321](/reports_his/result_us_osint_gemini_20251019_231321.md)
