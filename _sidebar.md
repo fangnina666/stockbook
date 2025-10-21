@@ -1,6 +1,5 @@
 - [首頁](/README.md)
 - 報告列表
-  - [result_台股券商分點_20251021](/reports_his/result_台股券商分點_20251021.md)
   - [result_美股_20251020_231303](/reports_his/result_美股_20251020_231303.md)
   - [result_法人進出_20251021](/reports_his/result_法人進出_20251021.md)
   - [result_法人進出_20251020](/reports_his/result_法人進出_20251020.md)
@@ -8,6 +7,7 @@
   - [result_法人偷偷買_20251021](/reports_his/result_法人偷偷買_20251021.md)
   - [result_法人偷偷買_20251020](/reports_his/result_法人偷偷買_20251020.md)
   - [result_法人偷偷買_20251017](/reports_his/result_法人偷偷買_20251017.md)
+  - [result_台股券商分點_20251021](/reports_his/result_台股券商分點_20251021.md)
   - [result_台股券商分點_20251020](/reports_his/result_台股券商分點_20251020.md)
   - [result_us_osint_gemini_20251019_231321](/reports_his/result_us_osint_gemini_20251019_231321.md)
   - [result_us_osint_gemini_20251018_231312](/reports_his/result_us_osint_gemini_20251018_231312.md)
