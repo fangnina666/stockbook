@@ -2,9 +2,11 @@
 - 報告列表
   - [result_美股_20251021_231333](/reports_his/result_美股_20251021_231333.md)
   - [result_美股_20251020_231303](/reports_his/result_美股_20251020_231303.md)
+  - [result_法人進出_20251022](/reports_his/result_法人進出_20251022.md)
   - [result_法人進出_20251021](/reports_his/result_法人進出_20251021.md)
   - [result_法人進出_20251020](/reports_his/result_法人進出_20251020.md)
   - [result_法人進出_20251017](/reports_his/result_法人進出_20251017.md)
+  - [result_法人偷偷買_20251022](/reports_his/result_法人偷偷買_20251022.md)
   - [result_法人偷偷買_20251021](/reports_his/result_法人偷偷買_20251021.md)
   - [result_法人偷偷買_20251020](/reports_his/result_法人偷偷買_20251020.md)
   - [result_法人偷偷買_20251017](/reports_his/result_法人偷偷買_20251017.md)
