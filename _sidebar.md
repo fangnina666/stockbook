@@ -1,5 +1,6 @@
 - [首頁](/README.md)
 - 報告列表
+  - [result_美股_20251022_231301](/reports_his/result_美股_20251022_231301.md)
   - [result_美股_20251021_231333](/reports_his/result_美股_20251021_231333.md)
   - [result_美股_20251020_231303](/reports_his/result_美股_20251020_231303.md)
   - [result_法人進出_20251022](/reports_his/result_法人進出_20251022.md)
