@@ -68,65 +68,84 @@ jobs:
           } > "${SIDEBAR_PATH}"
           echo "✅ ${SIDEBAR_PATH} generated."
 
-      - name: Generate hierarchical _sidebar.md (Y/M/D, switchable title)
+      - name: Generate _sidebar.md (Year/Month/Day collapsible)
         shell: bash
-        env:
-          TITLE_SOURCE: filename   # filename 或 h1（未設視同 h1）
         run: |
           set -euo pipefail
           SIDEBAR_PATH="_sidebar.md"
           ROOT_DIR="reports_his"
       
-          mapfile -t RAW < <(find "${ROOT_DIR}" -maxdepth 1 -type f -name "*.md" -printf '%T@|%f\n')
+          echo "Generating ${SIDEBAR_PATH} (Y/M/Day nodes; items per day) from ${ROOT_DIR}/*.md ..."
       
+          # 抓檔清單：輸出 "epoch|filename"
+          mapfile -t RAW < <(
+            find "${ROOT_DIR}" -maxdepth 1 -type f -name "*.md" -printf '%T@|%f\n'
+          )
+      
+          # 轉成 "YYYYMMDD|epoch|filename"（優先檔名內日期；無則用 mtime）
           LINES=()
           for line in "${RAW[@]}"; do
             epoch="${line%%|*}"; file="${line#*|}"; epoch_int="${epoch%.*}"
             dn="$(printf '%s' "$file" | grep -oE '[0-9]{8}(_[0-9]{6})?' | tail -n1 || true)"
-            if [[ -n "$dn" ]]; then ymd="${dn:0:8}"; else ymd="$(date -u -d "@${epoch_int}" +%Y%m%d)"; fi
+            if [[ -n "${dn}" ]]; then
+              ymd="${dn:0:8}"
+            else
+              ymd="$(date -u -d "@${epoch_int}" +%Y%m%d)"
+            fi
             LINES+=("${ymd}|${epoch}|${file}")
           done
-          IFS=$'\n' LINES_SORTED=($(printf '%s\n' "${LINES[@]}" | sort -r -t '|' -k1,1 -k2,2)); unset IFS
       
-          get_title() {
-            local path="$1"
-            if [[ "${TITLE_SOURCE:-h1}" == "filename" ]]; then
-              basename "${path}" .md
-              return
-            fi
-            # 抓第一個 ATX 標題（支援 #..###### + 空白），並剝掉 # 與左右空白
-            awk '
-              /^[[:space:]]*#{1,6}[[:space:]]+/ {
-                sub(/^[[:space:]]*#{1,6}[[:space:]]+/, "", $0);
-                gsub(/^[[:space:]]+|[[:space:]]+$/, "", $0);
-                print $0; exit
-              }
-            ' "$path" 2>/dev/null
-          }
+          # 依日期(降冪)→mtime(降冪)排序
+          IFS=$'\n' LINES_SORTED=($(printf '%s\n' "${LINES[@]}" | sort -r -t '|' -k1,1 -k2,2)); unset IFS
       
           {
             echo "- [首頁](/README.md)"
             echo "- 報告列表"
+      
             if [ ${#LINES_SORTED[@]} -eq 0 ]; then
               echo "  - （目前沒有檔案）"
             else
-              cur_y=""; cur_m=""; cur_day=""
+              cur_y=""; cur_m=""; cur_d=""
+      
               for item in "${LINES_SORTED[@]}"; do
-                ymd="${item%%|*}"; rest="${item#*|}"; file="${rest#*|}"
+                ymd="${item%%|*}"
+                rest="${item#*|}"
+                file="${rest#*|}"
+      
                 y="${ymd:0:4}"; m="${ymd:4:2}"; d="${ymd:6:2}"
-                full="${ROOT_DIR}/${file}"
-                title="$(get_title "${full}")"
-                [[ -z "$title" ]] && title="${file%.md}"
+                y_label="${y} 年"
+                m_label="${m} 月"
+                d_label="${y}-${m}-${d}"    # 「日」層級顯示字樣（不加連結）
+                title="${file%.md}"
                 safe_path="${ROOT_DIR}/${file// /%20}"
       
-                if [[ "$y" != "$cur_y" ]]; then echo "  - ${y} 年"; cur_y="$y"; cur_m=""; cur_day=""; fi
-                if [[ "$m" != "$cur_m" ]]; then echo "    - ${m} 月"; cur_m="$m"; cur_day=""; fi
-                label="${y}-${m}-${d}"
-                if [[ "$label" != "$cur_day" ]]; then echo "      - ${label}"; cur_day="$label"; fi
+                # 年層（節點）
+                if [[ "${y}" != "${cur_y}" ]]; then
+                  echo "  - ${y_label}"
+                  cur_y="${y}"
+                  cur_m=""
+                  cur_d=""
+                fi
+      
+                # 月層（節點）
+                if [[ "${m}" != "${cur_m}" ]]; then
+                  echo "    - ${m_label}"
+                  cur_m="${m}"
+                  cur_d=""
+                fi
+      
+                # 日層（節點，無連結；讓它可折疊）
+                if [[ "${d_label}" != "${cur_d}" ]]; then
+                  echo "      - ${d_label}"
+                  cur_d="${d_label}"
+                fi
+      
+                # 檔案項目（連結放在日節點底下）
                 echo "        - [${title}](/${safe_path})"
               done
             fi
           } > "${SIDEBAR_PATH}"
+      
           echo "✅ ${SIDEBAR_PATH} generated."
 
 
