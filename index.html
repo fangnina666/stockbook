@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
   <title>StockBook</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
+
+  <!-- 可選：折疊側欄樣式 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.css" />
+
+  <style>
+    /* 保險：強制頁面可垂直捲動 */
+    html, body { height: 100%; }
+    body { overflow-y: auto; }
+  </style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-116QT56CXC"></script>
@@ -12,7 +21,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  
     gtag('config', 'G-116QT56CXC');
   </script>
 </head>
@@ -22,31 +30,28 @@
   <script>
     window.$docsify = {
       name: 'StockBook',
-      //basePath: '/stockbook/',   // 專案 Pages 的子路徑
-      basePath: '/stockbook/#/',
-      homepage: 'README.md', // 這一行很重要
+      /* 如果是 GitHub Pages 的 project site，請改成你的專案子路徑，例：'/stockbook/' */
+      /* 不要加 '#/' */
+      basePath: '/stockbook/',
+
+      homepage: 'README.md',
       loadSidebar: true,
       subMaxLevel: 3,
-      sidebarDisplayLevel: 3,    /* 預設展開層級，可配合折疊外掛 */
+      sidebarDisplayLevel: 3,   // 預設展開到 年/月/日
       search: {
         paths: 'auto',
         placeholder: '搜尋報告…',
         noData: '沒有找到結果',
         maxAge: 86400000
       }
-      // 預設 router 是 hash（#/），不需要 404.html
-    };
+    }
   </script>
+
+  <!-- 只要載一次 docsify 核心！ -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
 
-  <!-- 這兩行一定要有 -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- Plugin 需在 docsify 後面載入 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-    <!-- 可選：讓箭頭與縮排樣式更好看 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.css" />
-  
-  <!-- 必要：折疊外掛，務必放在 docsify.min.js 之後 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
-
 </body>
 </html>
