@@ -68,6 +68,70 @@ jobs:
           } > "${SIDEBAR_PATH}"
           echo "✅ ${SIDEBAR_PATH} generated."
 
+      - name: Generate _sidebar.md from reports_his (hierarchical)
+        shell: bash
+        run: |
+          set -euo pipefail
+      
+          SIDEBAR_PATH="_sidebar.md"
+          ROOT_DIR="reports_his"
+      
+          echo "Generating ${SIDEBAR_PATH} (group by Year → Month) from ${ROOT_DIR}/*.md ..."
+      
+          # 取檔案 (mtime降冪)，輸出 "epoch|filename"
+          mapfile -t LINES < <(
+            find "${ROOT_DIR}" -maxdepth 1 -type f -name "*.md" -printf '%T@|%f\n' \
+            | sort -nr
+          )
+      
+          {
+            echo "- [首頁](/README.md)"
+            echo "- 報告列表"
+      
+            if [ ${#LINES[@]} -eq 0 ]; then
+              echo "  - （目前沒有檔案）"
+            else
+              cur_year=""
+              cur_month=""
+      
+              for line in "${LINES[@]}"; do
+                epoch="${line%%|*}"
+                file="${line#*|}"
+      
+                # 去掉小數點，避免 date 解析問題
+                epoch_int="${epoch%.*}"
+      
+                year="$(date -u -d "@${epoch_int}" +%Y)"
+                ym="$(date -u -d "@${epoch_int}" +%Y-%m)"
+      
+                # 顯示用標題（這裡用檔名去掉 .md；你也可以改成讀檔內 H1）
+                title="${file%.md}"
+      
+                # URL encode 空白
+                url_path="${ROOT_DIR}/${file// /%20}"
+      
+                # 年度節點
+                if [[ "${year}" != "${cur_year}" ]]; then
+                  echo "  - ${year} 年"
+                  cur_year="${year}"
+                  cur_month=""
+                fi
+      
+                # 月份節點（YYYY-MM）
+                if [[ "${ym}" != "${cur_month}" ]]; then
+                  echo "    - ${ym}"
+                  cur_month="${ym}"
+                fi
+      
+                # 檔案項目
+                echo "      - [${title}](/${url_path})"
+              done
+            fi
+          } > "${SIDEBAR_PATH}"
+      
+          echo "✅ ${SIDEBAR_PATH} generated."
+
+
       - name: Commit and push if changed (reports_his + _sidebar.md + README.md + .nojekyll)
         run: |
           git config user.name  "github-actions[bot]"
