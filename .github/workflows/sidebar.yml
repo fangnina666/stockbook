@@ -68,7 +68,7 @@ jobs:
           } > "${SIDEBAR_PATH}"
           echo "✅ ${SIDEBAR_PATH} generated."
 
-      - name: Generate _sidebar.md from reports_his (hierarchical)
+      - name: Generate hierarchical _sidebar.md (Year/Month/Day)
         shell: bash
         run: |
           set -euo pipefail
@@ -76,60 +76,95 @@ jobs:
           SIDEBAR_PATH="_sidebar.md"
           ROOT_DIR="reports_his"
       
-          echo "Generating ${SIDEBAR_PATH} (group by Year → Month) from ${ROOT_DIR}/*.md ..."
+          echo "Generating ${SIDEBAR_PATH} grouped by Year / Month / Day from ${ROOT_DIR}/*.md ..."
       
-          # 取檔案 (mtime降冪)，輸出 "epoch|filename"
-          mapfile -t LINES < <(
-            find "${ROOT_DIR}" -maxdepth 1 -type f -name "*.md" -printf '%T@|%f\n' \
-            | sort -nr
+          # 收集檔案清單：輸出 "epoch|filename"
+          mapfile -t RAW < <(
+            find "${ROOT_DIR}" -maxdepth 1 -type f -name "*.md" -printf '%T@|%f\n'
           )
       
+          # 轉換為 "YYYYMMDD|epoch|filename"（日期優先取檔名中的 8 碼；否則用 mtime）
+          LINES=()
+          for line in "${RAW[@]}"; do
+            epoch="${line%%|*}"
+            file="${line#*|}"
+            epoch_int="${epoch%.*}"
+      
+            # 從檔名擷取日期（允許 _YYYYMMDD 或 _YYYYMMDD_HHMMSS）
+            date_in_name="$(printf '%s' "$file" | grep -oE '[0-9]{8}(_[0-9]{6})?' | tail -n1 || true)"
+            if [[ -n "${date_in_name}" ]]; then
+              ymd="${date_in_name:0:8}"
+            else
+              ymd="$(date -u -d "@${epoch_int}" +%Y%m%d)"
+            fi
+      
+            LINES+=("${ymd}|${epoch}|${file}")
+          done
+      
+          # 依日期(降冪)再依 mtime(降冪)排序
+          IFS=$'\n' LINES_SORTED=($(printf '%s\n' "${LINES[@]}" | sort -r -t '|' -k1,1 -k2,2)); unset IFS
+      
+          # 產出 Sidebar
           {
             echo "- [首頁](/README.md)"
             echo "- 報告列表"
       
-            if [ ${#LINES[@]} -eq 0 ]; then
+            if [ ${#LINES_SORTED[@]} -eq 0 ]; then
               echo "  - （目前沒有檔案）"
             else
               cur_year=""
               cur_month=""
+              cur_day=""
       
-              for line in "${LINES[@]}"; do
-                epoch="${line%%|*}"
-                file="${line#*|}"
+              for item in "${LINES_SORTED[@]}"; do
+                ymd="${item%%|*}"
+                rest="${item#*|}"
+                epoch="${rest%%|*}"
+                file="${rest#*|}"
       
-                # 去掉小數點，避免 date 解析問題
-                epoch_int="${epoch%.*}"
+                y="${ymd:0:4}"
+                m="${ymd:4:2}"
+                d="${ymd:6:2}"
       
-                year="$(date -u -d "@${epoch_int}" +%Y)"
-                ym="$(date -u -d "@${epoch_int}" +%Y-%m)"
-      
-                # 顯示用標題（這裡用檔名去掉 .md；你也可以改成讀檔內 H1）
-                title="${file%.md}"
+                # 顯示標題：優先取檔內第一個 H1，否則用檔名去 .md
+                title="$(sed -n '1,50p' "${ROOT_DIR}/${file}" | sed -n 's/^# \{0,1\}//p' | head -n1 | sed 's/^[[:space:]]\+//; s/[[:space:]]\+$//' )"
+                if [[ -z "${title}" ]]; then
+                  title="${file%.md}"
+                fi
       
                 # URL encode 空白
-                url_path="${ROOT_DIR}/${file// /%20}"
+                safe_path="${ROOT_DIR}/${file// /%20}"
       
-                # 年度節點
-                if [[ "${year}" != "${cur_year}" ]]; then
-                  echo "  - ${year} 年"
-                  cur_year="${year}"
+                # 年層
+                if [[ "${y}" != "${cur_year}" ]]; then
+                  echo "  - ${y} 年"
+                  cur_year="${y}"
                   cur_month=""
+                  cur_day=""
                 fi
       
-                # 月份節點（YYYY-MM）
-                if [[ "${ym}" != "${cur_month}" ]]; then
-                  echo "    - ${ym}"
-                  cur_month="${ym}"
+                # 月層（顯示為 01, 02, ...）
+                if [[ "${m}" != "${cur_month}" ]]; then
+                  echo "    - ${m} 月"
+                  cur_month="${m}"
+                  cur_day=""
                 fi
       
-                # 檔案項目
-                echo "      - [${title}](/${url_path})"
+                # 日層（顯示 YYYY-MM-DD，便於辨識）
+                day_label="${y}-${m}-${d}"
+                if [[ "${day_label}" != "${cur_day}" ]]; then
+                  echo "      - ${day_label}"
+                  cur_day="${day_label}"
+                fi
+      
+                # 檔案項目（同一天可能多個）
+                echo "        - [${title}](/${safe_path})"
               done
             fi
           } > "${SIDEBAR_PATH}"
       
           echo "✅ ${SIDEBAR_PATH} generated."
+
 
 
       - name: Commit and push if changed (reports_his + _sidebar.md + README.md + .nojekyll)
