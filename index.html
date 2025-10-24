@@ -26,7 +26,8 @@
       basePath: '/stockbook/#/',
       homepage: 'README.md', // 這一行很重要
       loadSidebar: true,
-      subMaxLevel: 2,
+      subMaxLevel: 3,
+      sidebarDisplayLevel: 1,    /* 預設展開層級，可配合折疊外掛 */
       search: {
         paths: 'auto',
         placeholder: '搜尋報告…',
@@ -36,9 +37,16 @@
       // 預設 router 是 hash（#/），不需要 404.html
     };
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
 
   <!-- 這兩行一定要有 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <!-- 可選：讓箭頭與縮排樣式更好看 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.css" />
+  
+  <!-- 必要：折疊外掛，務必放在 docsify.min.js 之後 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+
 </body>
 </html>
