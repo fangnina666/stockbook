@@ -2,6 +2,8 @@
 - 報告列表
   - 2025 年
     - 10 月
+      - 2025-10-24
+        - [result_combined_reco_20251024](/reports_his/result_combined_reco_20251024.md)
       - 2025-10-23
         - [result_美股_20251023_231326](/reports_his/result_美股_20251023_231326.md)
         - [result_法人進出_20251023](/reports_his/result_法人進出_20251023.md)
