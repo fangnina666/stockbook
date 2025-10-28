@@ -3,6 +3,7 @@
   - 2025 年
     - 10 月
       - 2025-10-27
+        - [result_美股_20251027_231331](/reports_his/result_美股_20251027_231331.md)
         - [result_法人進出_20251027](/reports_his/result_法人進出_20251027.md)
         - [result_法人偷偷買_20251027](/reports_his/result_法人偷偷買_20251027.md)
         - [result_台股券商分點_20251027](/reports_his/result_台股券商分點_20251027.md)
