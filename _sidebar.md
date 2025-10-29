@@ -3,10 +3,10 @@
   - 2025 年
     - 10 月
       - 2025-10-29
-        - [result_combined_reco_20251029](/reports_his/result_combined_reco_20251029.md)
         - [result_法人進出_20251029](/reports_his/result_法人進出_20251029.md)
         - [result_法人偷偷買_20251029](/reports_his/result_法人偷偷買_20251029.md)
         - [result_台股券商分點_20251029](/reports_his/result_台股券商分點_20251029.md)
+        - [result_combined_reco_20251029](/reports_his/result_combined_reco_20251029.md)
       - 2025-10-28
         - [result_美股_20251028_231353](/reports_his/result_美股_20251028_231353.md)
         - [result_法人進出_20251028](/reports_his/result_法人進出_20251028.md)
