@@ -1,6 +1,9 @@
 - [首頁](/README.md)
 - 報告列表
   - 2025 年
+    - 11 月
+      - 2025-11-01
+        - [result_combined_reco_20251101](/reports_his/result_combined_reco_20251101.md)
     - 10 月
       - 2025-10-31
         - [result_美股_20251031_231401](/reports_his/result_美股_20251031_231401.md)
