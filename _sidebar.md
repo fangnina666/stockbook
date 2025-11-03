@@ -2,6 +2,8 @@
 - 報告列表
   - 2025 年
     - 11 月
+      - 2025-11-03
+        - [result_台股券商分點_20251103](/reports_his/result_台股券商分點_20251103.md)
       - 2025-11-02
         - [result_美股_20251102_231302](/reports_his/result_美股_20251102_231302.md)
         - [result_combined_reco_20251102](/reports_his/result_combined_reco_20251102.md)
