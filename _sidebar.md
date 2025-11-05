@@ -2,6 +2,9 @@
 - 報告列表
   - 2025 年
     - 11 月
+      - 2025-11-05
+        - [result_法人進出_20251105](/reports_his/result_法人進出_20251105.md)
+        - [result_法人偷偷買_20251105](/reports_his/result_法人偷偷買_20251105.md)
       - 2025-11-04
         - [result_美股_20251104_231326](/reports_his/result_美股_20251104_231326.md)
         - [result_台股券商分點_20251104](/reports_his/result_台股券商分點_20251104.md)
