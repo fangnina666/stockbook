@@ -4,6 +4,8 @@
     - 11 月
       - 2025-11-14
         - [result_美股_20251114_231540](/reports_his/result_美股_20251114_231540.md)
+        - [result_法人進出_20251114](/reports_his/result_法人進出_20251114.md)
+        - [result_法人偷偷買_20251114](/reports_his/result_法人偷偷買_20251114.md)
         - [result_台股券商分點_20251114](/reports_his/result_台股券商分點_20251114.md)
       - 2025-11-13
         - [result_美股_20251113_231452](/reports_his/result_美股_20251113_231452.md)
