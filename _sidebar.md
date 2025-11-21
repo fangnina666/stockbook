@@ -6,6 +6,7 @@
         - [result_法人進出_20251121](/reports_his/result_法人進出_20251121.md)
         - [result_法人偷偷買_20251121](/reports_his/result_法人偷偷買_20251121.md)
         - [result_台股券商分點_20251121](/reports_his/result_台股券商分點_20251121.md)
+        - [result_combined_reco_20251121](/reports_his/result_combined_reco_20251121.md)
       - 2025-11-20
         - [result_美股_20251120_231434](/reports_his/result_美股_20251120_231434.md)
         - [result_法人進出_20251120](/reports_his/result_法人進出_20251120.md)
