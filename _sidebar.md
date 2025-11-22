@@ -3,6 +3,7 @@
   - 2025 年
     - 11 月
       - 2025-11-21
+        - [result_美股_20251121_231417](/reports_his/result_美股_20251121_231417.md)
         - [result_法人進出_20251121](/reports_his/result_法人進出_20251121.md)
         - [result_法人偷偷買_20251121](/reports_his/result_法人偷偷買_20251121.md)
         - [result_台股券商分點_20251121](/reports_his/result_台股券商分點_20251121.md)
