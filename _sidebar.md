@@ -3,6 +3,7 @@
   - 2025 年
     - 11 月
       - 2025-11-29
+        - [result_美股_20251129_231536](/reports_his/result_美股_20251129_231536.md)
         - [result_combined_reco_20251129](/reports_his/result_combined_reco_20251129.md)
       - 2025-11-28
         - [result_美股_20251128_231437](/reports_his/result_美股_20251128_231437.md)
