@@ -3,6 +3,7 @@
   - 2025 年
     - 12 月
       - 2025-12-16
+        - [result_台股券商分點_20251216](/reports_his/result_台股券商分點_20251216.md)
         - [result_法人進出_20251216](/reports_his/result_法人進出_20251216.md)
         - [result_法人偷偷買_20251216](/reports_his/result_法人偷偷買_20251216.md)
       - 2025-12-15
