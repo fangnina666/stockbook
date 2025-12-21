@@ -2,6 +2,8 @@
 - 報告列表
   - 2025 年
     - 12 月
+      - 2025-12-21
+        - [result_combined_reco_20251221](/reports_his/result_combined_reco_20251221.md)
       - 2025-12-20
         - [result_美股_20251220_231517](/reports_his/result_美股_20251220_231517.md)
         - [result_combined_reco_20251220](/reports_his/result_combined_reco_20251220.md)
