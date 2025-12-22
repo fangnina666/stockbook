@@ -2,6 +2,9 @@
 - 報告列表
   - 2025 年
     - 12 月
+      - 2025-12-22
+        - [result_法人進出_20251222](/reports_his/result_法人進出_20251222.md)
+        - [result_法人偷偷買_20251222](/reports_his/result_法人偷偷買_20251222.md)
       - 2025-12-21
         - [result_美股_20251221_231438](/reports_his/result_美股_20251221_231438.md)
         - [result_combined_reco_20251221](/reports_his/result_combined_reco_20251221.md)
