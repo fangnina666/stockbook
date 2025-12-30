@@ -3,9 +3,10 @@
   - 2025 年
     - 12 月
       - 2025-12-30
-        - [result_台股券商分點_20251230](/reports_his/result_台股券商分點_20251230.md)
         - [result_法人進出_20251230](/reports_his/result_法人進出_20251230.md)
         - [result_法人偷偷買_20251230](/reports_his/result_法人偷偷買_20251230.md)
+        - [result_台股券商分點_20251230](/reports_his/result_台股券商分點_20251230.md)
+        - [result_combined_reco_20251230](/reports_his/result_combined_reco_20251230.md)
       - 2025-12-29
         - [result_美股_20251229_231452](/reports_his/result_美股_20251229_231452.md)
         - [result_法人進出_20251229](/reports_his/result_法人進出_20251229.md)
