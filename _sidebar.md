@@ -3,6 +3,7 @@
   - 2026 年
     - 01 月
       - 2026-01-01
+        - [result_美股_20260101_231610](/reports_his/result_美股_20260101_231610.md)
         - [result_台股券商分點_20260101](/reports_his/result_台股券商分點_20260101.md)
         - [result_combined_reco_20260101](/reports_his/result_combined_reco_20260101.md)
   - 2025 年
