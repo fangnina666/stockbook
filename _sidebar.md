@@ -3,9 +3,10 @@
   - 2026 年
     - 01 月
       - 2026-01-13
-        - [result_台股券商分點_20260113](/reports_his/result_台股券商分點_20260113.md)
+        - [result_combined_reco_20260113](/reports_his/result_combined_reco_20260113.md)
         - [result_法人進出_20260113](/reports_his/result_法人進出_20260113.md)
         - [result_法人偷偷買_20260113](/reports_his/result_法人偷偷買_20260113.md)
+        - [result_台股券商分點_20260113](/reports_his/result_台股券商分點_20260113.md)
       - 2026-01-12
         - [result_美股_20260112_231312](/reports_his/result_美股_20260112_231312.md)
         - [result_法人進出_20260112](/reports_his/result_法人進出_20260112.md)
