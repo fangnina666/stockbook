@@ -5,6 +5,7 @@
       - 2026-01-14
         - [result_法人進出_20260114](/reports_his/result_法人進出_20260114.md)
         - [result_法人偷偷買_20260114](/reports_his/result_法人偷偷買_20260114.md)
+        - [result_台股券商分點_20260114](/reports_his/result_台股券商分點_20260114.md)
       - 2026-01-13
         - [result_美股_20260113_231520](/reports_his/result_美股_20260113_231520.md)
         - [result_法人進出_20260113](/reports_his/result_法人進出_20260113.md)
