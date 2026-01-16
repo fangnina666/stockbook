@@ -60,7 +60,7 @@ jobs:
               echo "  - （目前沒有檔案）"
             else
               for f in "${FILES[@]}"; do
-                base="${file%.md}"
+                base="${f%.md}"
                 # 顯示名稱轉換（只影響 sidebar）
                 if [[ "$base" == result_combined_reco* ]]; then
                   ymd="${BASH_REMATCH[1]}"
