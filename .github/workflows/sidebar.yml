@@ -45,50 +45,21 @@ jobs:
             } > README.md
           fi
 
-      - name: Generate _sidebar.md from reports_his
-        shell: bash
-        run: |
-          set -euo pipefail
-          SIDEBAR_PATH="_sidebar.md"
-          echo "Generating ${SIDEBAR_PATH} from reports_his/*.md ..."
-          # 依「最後修改時間」排序（新→舊）
-          mapfile -t FILES < <(find reports_his -maxdepth 1 -type f -name "*.md" -printf "%T@ %f\n" | sort -nr | awk '{ $1=""; sub(/^ /,""); print }')
-          {
-            echo "- [首頁](/README.md)"
-            echo "- 報告列表"
-            if [ ${#FILES[@]} -eq 0 ]; then
-              echo "  - （目前沒有檔案）"
-            else
-              for f in "${FILES[@]}"; do
-                base="${f%.md}"
-                # 顯示名稱轉換（只影響 sidebar）
-                if [[ "$base" == result_combined_reco_* ]]; then
-                  ymd="${BASH_REMATCH[1]}"
-                  title="📌 選股摘要 (${ymd})"
-                else
-                  title="$base"
-                fi
-                safe_path="reports_his/${f// /%20}"
-                echo "  - [${title}](/${safe_path})"
-              done
-            fi
-          } > "${SIDEBAR_PATH}"
-          echo "✅ ${SIDEBAR_PATH} generated."
-
+      # ✅ 只保留「可折疊」版本，避免產生兩次 _sidebar.md 互相覆蓋
       - name: Generate _sidebar.md (Year/Month/Day collapsible)
         shell: bash
         run: |
           set -euo pipefail
           SIDEBAR_PATH="_sidebar.md"
           ROOT_DIR="reports_his"
-      
+
           echo "Generating ${SIDEBAR_PATH} (Y/M/Day nodes; items per day) from ${ROOT_DIR}/*.md ..."
-      
+
           # 抓檔清單：輸出 "epoch|filename"
           mapfile -t RAW < <(
             find "${ROOT_DIR}" -maxdepth 1 -type f -name "*.md" -printf '%T@|%f\n'
           )
-      
+
           # 轉成 "YYYYMMDD|epoch|filename"（優先檔名內日期；無則用 mtime）
           LINES=()
           for line in "${RAW[@]}"; do
@@ -101,37 +72,42 @@ jobs:
             fi
             LINES+=("${ymd}|${epoch}|${file}")
           done
-      
+
           # 依日期(降冪)→mtime(降冪)排序
           IFS=$'\n' LINES_SORTED=($(printf '%s\n' "${LINES[@]}" | sort -r -t '|' -k1,1 -k2,2)); unset IFS
-      
+
           {
             echo "- [首頁](/README.md)"
             echo "- 報告列表"
-      
+
             if [ ${#LINES_SORTED[@]} -eq 0 ]; then
               echo "  - （目前沒有檔案）"
             else
               cur_y=""; cur_m=""; cur_d=""
-      
+
               for item in "${LINES_SORTED[@]}"; do
-                ymd="${item%%|*}"
+                day_ymd="${item%%|*}"
                 rest="${item#*|}"
                 file="${rest#*|}"
-      
-                y="${ymd:0:4}"; m="${ymd:4:2}"; d="${ymd:6:2}"
+
+                y="${day_ymd:0:4}"; m="${day_ymd:4:2}"; d="${day_ymd:6:2}"
                 y_label="${y} 年"
                 m_label="${m} 月"
                 d_label="${y}-${m}-${d}"    # 「日」層級顯示字樣（不加連結）
                 base="${file%.md}"
-                if [[ "$base" == result_combined_reco* ]]; then
-                  ymd="${BASH_REMATCH[1]}"
-                  title="📌 選股摘要 (${ymd})"
+
+                # ✅ 顯示名稱轉換（只影響 sidebar，不改檔名）
+                if [[ "$base" =~ ^result_combined_reco_([0-9]{8}) ]]; then
+                  reco_ymd="${BASH_REMATCH[1]}"
+                  title="📌 選股摘要 (${reco_ymd})"
+                elif [[ "$base" == result_combined_reco* ]]; then
+                  title="📌 選股摘要"
                 else
                   title="$base"
                 fi
+
                 safe_path="${ROOT_DIR}/${file// /%20}"
-      
+
                 # 年層（節點）
                 if [[ "${y}" != "${cur_y}" ]]; then
                   echo "  - ${y_label}"
@@ -139,28 +115,27 @@ jobs:
                   cur_m=""
                   cur_d=""
                 fi
-      
+
                 # 月層（節點）
                 if [[ "${m}" != "${cur_m}" ]]; then
                   echo "    - ${m_label}"
                   cur_m="${m}"
                   cur_d=""
                 fi
-      
+
                 # 日層（節點，無連結；讓它可折疊）
                 if [[ "${d_label}" != "${cur_d}" ]]; then
                   echo "      - ${d_label}"
                   cur_d="${d_label}"
                 fi
-      
+
                 # 檔案項目（連結放在日節點底下）
                 echo "        - [${title}](/${safe_path})"
               done
             fi
           } > "${SIDEBAR_PATH}"
-      
-          echo "✅ ${SIDEBAR_PATH} generated."
 
+          echo "✅ ${SIDEBAR_PATH} generated."
 
       - name: Commit and push if changed (reports_his + _sidebar.md + README.md + .nojekyll)
         run: |
