@@ -60,7 +60,14 @@ jobs:
               echo "  - （目前沒有檔案）"
             else
               for f in "${FILES[@]}"; do
-                title="${f%.md}"
+                base="${file%.md}"
+                # 顯示名稱轉換（只影響 sidebar）
+                if [[ "$base" == result_combined_reco* ]]; then
+                  ymd="${BASH_REMATCH[1]}"
+                  title="📌 選股摘要 (${ymd})"
+                else
+                  title="$base"
+                fi
                 safe_path="reports_his/${f// /%20}"
                 echo "  - [${title}](/${safe_path})"
               done
@@ -116,7 +123,13 @@ jobs:
                 y_label="${y} 年"
                 m_label="${m} 月"
                 d_label="${y}-${m}-${d}"    # 「日」層級顯示字樣（不加連結）
-                title="${file%.md}"
+                base="${file%.md}"
+                if [[ "$base" == result_combined_reco* ]]; then
+                  ymd="${BASH_REMATCH[1]}"
+                  title="📌 選股摘要 (${ymd})"
+                else
+                  title="$base"
+                fi
                 safe_path="${ROOT_DIR}/${file// /%20}"
       
                 # 年層（節點）
