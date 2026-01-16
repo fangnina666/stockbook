@@ -62,7 +62,7 @@ jobs:
               for f in "${FILES[@]}"; do
                 base="${f%.md}"
                 # 顯示名稱轉換（只影響 sidebar）
-                if [[ "$base" == result_combined_reco* ]]; then
+                if [[ "$base" == result_combined_reco_* ]]; then
                   ymd="${BASH_REMATCH[1]}"
                   title="📌 選股摘要 (${ymd})"
                 else
