@@ -4,6 +4,7 @@
     - 01 月
       - 2026-01-26
         - [result_台股券商分點_20260126](/reports_his/result_台股券商分點_20260126.md)
+        - [📌 選股摘要 (20260126)](/reports_his/result_combined_reco_20260126.md)
       - 2026-01-25
         - [result_美股_20260125_231529](/reports_his/result_美股_20260125_231529.md)
         - [📌 選股摘要 (20260125)](/reports_his/result_combined_reco_20260125.md)
