@@ -3,6 +3,7 @@
   - 2026 年
     - 01 月
       - 2026-01-27
+        - [result_美股_20260127_231605](/reports_his/result_美股_20260127_231605.md)
         - [result_法人進出_20260127](/reports_his/result_法人進出_20260127.md)
         - [result_法人偷偷買_20260127](/reports_his/result_法人偷偷買_20260127.md)
         - [result_台股券商分點_20260127](/reports_his/result_台股券商分點_20260127.md)
