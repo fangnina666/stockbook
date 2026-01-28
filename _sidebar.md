@@ -5,6 +5,8 @@
       - 2026-01-28
         - [result_美股_20260128_011959](/reports_his/result_美股_20260128_011959.md)
         - [result_美股_20260128_004230](/reports_his/result_美股_20260128_004230.md)
+        - [result_法人進出_20260128](/reports_his/result_法人進出_20260128.md)
+        - [result_法人偷偷買_20260128](/reports_his/result_法人偷偷買_20260128.md)
       - 2026-01-27
         - [result_美股_20260127_231605](/reports_his/result_美股_20260127_231605.md)
         - [result_法人進出_20260127](/reports_his/result_法人進出_20260127.md)
