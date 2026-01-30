@@ -8,6 +8,7 @@
         - [result_美股_20260130_001035](/reports_his/result_美股_20260130_001035.md)
         - [result_法人進出_20260130](/reports_his/result_法人進出_20260130.md)
         - [result_法人偷偷買_20260130](/reports_his/result_法人偷偷買_20260130.md)
+        - [result_台股券商分點_20260130](/reports_his/result_台股券商分點_20260130.md)
       - 2026-01-29
         - [result_美股_20260129_232016](/reports_his/result_美股_20260129_232016.md)
         - [result_法人進出_20260129](/reports_his/result_法人進出_20260129.md)
