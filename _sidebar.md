@@ -3,6 +3,7 @@
   - 2026 年
     - 01 月
       - 2026-01-30
+        - [result_美股_20260130_232011](/reports_his/result_美股_20260130_232011.md)
         - [result_美股_20260130_010256](/reports_his/result_美股_20260130_010256.md)
         - [result_美股_20260130_002322](/reports_his/result_美股_20260130_002322.md)
         - [result_美股_20260130_001035](/reports_his/result_美股_20260130_001035.md)
