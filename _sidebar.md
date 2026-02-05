@@ -2,6 +2,9 @@
 - 報告列表
   - 2026 年
     - 02 月
+      - 2026-02-05
+        - [result_法人進出_20260205](/reports_his/result_法人進出_20260205.md)
+        - [result_法人偷偷買_20260205](/reports_his/result_法人偷偷買_20260205.md)
       - 2026-02-04
         - [result_美股_20260204_232036](/reports_his/result_美股_20260204_232036.md)
         - [result_法人進出_20260204](/reports_his/result_法人進出_20260204.md)
