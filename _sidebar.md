@@ -4,6 +4,7 @@
     - 02 月
       - 2026-02-22
         - [result_美股_20260222_015839](/reports_his/result_美股_20260222_015839.md)
+        - [📌 選股摘要 (20260222)](/reports_his/result_combined_reco_20260222.md)
       - 2026-02-21
         - [result_美股_20260221_015050](/reports_his/result_美股_20260221_015050.md)
         - [📌 選股摘要 (20260221)](/reports_his/result_combined_reco_20260221.md)
