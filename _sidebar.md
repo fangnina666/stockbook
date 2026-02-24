@@ -3,9 +3,9 @@
   - 2026 年
     - 02 月
       - 2026-02-24
+        - [result_美股_20260224_015722](/reports_his/result_美股_20260224_015722.md)
         - [result_法人進出_20260224](/reports_his/result_法人進出_20260224.md)
         - [result_法人偷偷買_20260224](/reports_his/result_法人偷偷買_20260224.md)
-        - [result_美股_20260224_015722](/reports_his/result_美股_20260224_015722.md)
         - [result_台股券商分點_20260224](/reports_his/result_台股券商分點_20260224.md)
         - [result_wave_score_20260224_summary_gai](/reports_his/result_wave_score_20260224_summary_gai.md)
         - [result_ind_report_20260224](/reports_his/result_ind_report_20260224.md)
@@ -472,22 +472,22 @@
         - [result_台股券商分點_20251120](/reports_his/result_台股券商分點_20251120.md)
         - [📌 選股摘要 (20251120)](/reports_his/result_combined_reco_20251120.md)
       - 2025-11-19
-        - [📌 選股摘要 (20251119)](/reports_his/result_combined_reco_20251119.md)
         - [result_美股_20251119_231543](/reports_his/result_美股_20251119_231543.md)
         - [result_法人進出_20251119](/reports_his/result_法人進出_20251119.md)
         - [result_法人偷偷買_20251119](/reports_his/result_法人偷偷買_20251119.md)
         - [result_台股券商分點_20251119](/reports_his/result_台股券商分點_20251119.md)
+        - [📌 選股摘要 (20251119)](/reports_his/result_combined_reco_20251119.md)
       - 2025-11-18
-        - [📌 選股摘要 (20251118)](/reports_his/result_combined_reco_20251118.md)
         - [result_美股_20251118_231412](/reports_his/result_美股_20251118_231412.md)
         - [result_法人進出_20251118](/reports_his/result_法人進出_20251118.md)
         - [result_法人偷偷買_20251118](/reports_his/result_法人偷偷買_20251118.md)
         - [result_台股券商分點_20251118](/reports_his/result_台股券商分點_20251118.md)
+        - [📌 選股摘要 (20251118)](/reports_his/result_combined_reco_20251118.md)
       - 2025-11-17
-        - [📌 選股摘要 (20251117)](/reports_his/result_combined_reco_20251117.md)
         - [result_美股_20251117_231426](/reports_his/result_美股_20251117_231426.md)
         - [result_法人進出_20251117](/reports_his/result_法人進出_20251117.md)
         - [result_法人偷偷買_20251117](/reports_his/result_法人偷偷買_20251117.md)
+        - [📌 選股摘要 (20251117)](/reports_his/result_combined_reco_20251117.md)
       - 2025-11-16
         - [result_美股_20251116_231321](/reports_his/result_美股_20251116_231321.md)
       - 2025-11-15
@@ -500,44 +500,44 @@
       - 2025-11-13
         - [result_美股_20251113_231452](/reports_his/result_美股_20251113_231452.md)
       - 2025-11-12
-        - [📌 選股摘要 (20251112)](/reports_his/result_combined_reco_20251112.md)
         - [result_美股_20251112_231443](/reports_his/result_美股_20251112_231443.md)
         - [result_法人進出_20251112](/reports_his/result_法人進出_20251112.md)
         - [result_法人偷偷買_20251112](/reports_his/result_法人偷偷買_20251112.md)
         - [result_台股券商分點_20251112](/reports_his/result_台股券商分點_20251112.md)
+        - [📌 選股摘要 (20251112)](/reports_his/result_combined_reco_20251112.md)
       - 2025-11-11
         - [result_美股_20251111_231332](/reports_his/result_美股_20251111_231332.md)
         - [result_台股券商分點_20251111](/reports_his/result_台股券商分點_20251111.md)
       - 2025-11-10
-        - [📌 選股摘要 (20251110)](/reports_his/result_combined_reco_20251110.md)
         - [result_美股_20251110_231415](/reports_his/result_美股_20251110_231415.md)
         - [result_法人進出_20251110](/reports_his/result_法人進出_20251110.md)
         - [result_法人偷偷買_20251110](/reports_his/result_法人偷偷買_20251110.md)
         - [result_台股券商分點_20251110](/reports_his/result_台股券商分點_20251110.md)
+        - [📌 選股摘要 (20251110)](/reports_his/result_combined_reco_20251110.md)
       - 2025-11-09
-        - [📌 選股摘要 (20251109)](/reports_his/result_combined_reco_20251109.md)
         - [result_美股_20251109_231306](/reports_his/result_美股_20251109_231306.md)
+        - [📌 選股摘要 (20251109)](/reports_his/result_combined_reco_20251109.md)
       - 2025-11-08
-        - [📌 選股摘要 (20251108)](/reports_his/result_combined_reco_20251108.md)
         - [result_美股_20251108_231322](/reports_his/result_美股_20251108_231322.md)
+        - [📌 選股摘要 (20251108)](/reports_his/result_combined_reco_20251108.md)
       - 2025-11-07
-        - [📌 選股摘要 (20251107)](/reports_his/result_combined_reco_20251107.md)
         - [result_美股_20251107_231405](/reports_his/result_美股_20251107_231405.md)
         - [result_法人進出_20251107](/reports_his/result_法人進出_20251107.md)
         - [result_法人偷偷買_20251107](/reports_his/result_法人偷偷買_20251107.md)
         - [result_台股券商分點_20251107](/reports_his/result_台股券商分點_20251107.md)
+        - [📌 選股摘要 (20251107)](/reports_his/result_combined_reco_20251107.md)
       - 2025-11-06
-        - [📌 選股摘要 (20251106)](/reports_his/result_combined_reco_20251106.md)
         - [result_美股_20251106_231424](/reports_his/result_美股_20251106_231424.md)
         - [result_法人進出_20251106](/reports_his/result_法人進出_20251106.md)
         - [result_法人偷偷買_20251106](/reports_his/result_法人偷偷買_20251106.md)
         - [result_台股券商分點_20251106](/reports_his/result_台股券商分點_20251106.md)
+        - [📌 選股摘要 (20251106)](/reports_his/result_combined_reco_20251106.md)
       - 2025-11-05
-        - [📌 選股摘要 (20251105)](/reports_his/result_combined_reco_20251105.md)
         - [result_美股_20251105_231457](/reports_his/result_美股_20251105_231457.md)
         - [result_法人進出_20251105](/reports_his/result_法人進出_20251105.md)
         - [result_法人偷偷買_20251105](/reports_his/result_法人偷偷買_20251105.md)
         - [result_台股券商分點_20251105](/reports_his/result_台股券商分點_20251105.md)
+        - [📌 選股摘要 (20251105)](/reports_his/result_combined_reco_20251105.md)
       - 2025-11-04
         - [result_美股_20251104_231326](/reports_his/result_美股_20251104_231326.md)
         - [result_台股券商分點_20251104](/reports_his/result_台股券商分點_20251104.md)
@@ -545,53 +545,53 @@
         - [result_美股_20251103_231414](/reports_his/result_美股_20251103_231414.md)
         - [result_台股券商分點_20251103](/reports_his/result_台股券商分點_20251103.md)
       - 2025-11-02
-        - [📌 選股摘要 (20251102)](/reports_his/result_combined_reco_20251102.md)
         - [result_美股_20251102_231302](/reports_his/result_美股_20251102_231302.md)
+        - [📌 選股摘要 (20251102)](/reports_his/result_combined_reco_20251102.md)
       - 2025-11-01
-        - [📌 選股摘要 (20251101)](/reports_his/result_combined_reco_20251101.md)
         - [result_美股_20251101_231333](/reports_his/result_美股_20251101_231333.md)
+        - [📌 選股摘要 (20251101)](/reports_his/result_combined_reco_20251101.md)
     - 10 月
       - 2025-10-31
-        - [📌 選股摘要 (20251031)](/reports_his/result_combined_reco_20251031.md)
         - [result_美股_20251031_231401](/reports_his/result_美股_20251031_231401.md)
         - [result_法人進出_20251031](/reports_his/result_法人進出_20251031.md)
         - [result_法人偷偷買_20251031](/reports_his/result_法人偷偷買_20251031.md)
         - [result_台股券商分點_20251031](/reports_his/result_台股券商分點_20251031.md)
+        - [📌 選股摘要 (20251031)](/reports_his/result_combined_reco_20251031.md)
       - 2025-10-30
-        - [📌 選股摘要 (20251030)](/reports_his/result_combined_reco_20251030.md)
         - [result_美股_20251030_231309](/reports_his/result_美股_20251030_231309.md)
         - [result_美股_20251030_133623](/reports_his/result_美股_20251030_133623.md)
         - [result_法人進出_20251030](/reports_his/result_法人進出_20251030.md)
         - [result_法人偷偷買_20251030](/reports_his/result_法人偷偷買_20251030.md)
         - [result_台股券商分點_20251030](/reports_his/result_台股券商分點_20251030.md)
+        - [📌 選股摘要 (20251030)](/reports_his/result_combined_reco_20251030.md)
       - 2025-10-29
-        - [📌 選股摘要 (20251029)](/reports_his/result_combined_reco_20251029.md)
         - [result_美股_20251029_231358](/reports_his/result_美股_20251029_231358.md)
         - [result_法人進出_20251029](/reports_his/result_法人進出_20251029.md)
         - [result_法人偷偷買_20251029](/reports_his/result_法人偷偷買_20251029.md)
         - [result_台股券商分點_20251029](/reports_his/result_台股券商分點_20251029.md)
+        - [📌 選股摘要 (20251029)](/reports_his/result_combined_reco_20251029.md)
       - 2025-10-28
-        - [📌 選股摘要 (20251028)](/reports_his/result_combined_reco_20251028.md)
         - [result_美股_20251028_231353](/reports_his/result_美股_20251028_231353.md)
         - [result_法人進出_20251028](/reports_his/result_法人進出_20251028.md)
         - [result_法人偷偷買_20251028](/reports_his/result_法人偷偷買_20251028.md)
         - [result_台股券商分點_20251028](/reports_his/result_台股券商分點_20251028.md)
+        - [📌 選股摘要 (20251028)](/reports_his/result_combined_reco_20251028.md)
       - 2025-10-27
-        - [📌 選股摘要 (20251027)](/reports_his/result_combined_reco_20251027.md)
         - [result_美股_20251027_231331](/reports_his/result_美股_20251027_231331.md)
         - [result_法人進出_20251027](/reports_his/result_法人進出_20251027.md)
         - [result_法人偷偷買_20251027](/reports_his/result_法人偷偷買_20251027.md)
         - [result_台股券商分點_20251027](/reports_his/result_台股券商分點_20251027.md)
+        - [📌 選股摘要 (20251027)](/reports_his/result_combined_reco_20251027.md)
       - 2025-10-26
-        - [📌 選股摘要 (20251026)](/reports_his/result_combined_reco_20251026.md)
         - [result_美股_20251026_231407](/reports_his/result_美股_20251026_231407.md)
+        - [📌 選股摘要 (20251026)](/reports_his/result_combined_reco_20251026.md)
       - 2025-10-25
-        - [📌 選股摘要 (20251025)](/reports_his/result_combined_reco_20251025.md)
         - [result_美股_20251025_231320](/reports_his/result_美股_20251025_231320.md)
+        - [📌 選股摘要 (20251025)](/reports_his/result_combined_reco_20251025.md)
       - 2025-10-24
-        - [📌 選股摘要 (20251024)](/reports_his/result_combined_reco_20251024.md)
         - [result_美股_20251024_231327](/reports_his/result_美股_20251024_231327.md)
         - [result_台股券商分點_20251024](/reports_his/result_台股券商分點_20251024.md)
+        - [📌 選股摘要 (20251024)](/reports_his/result_combined_reco_20251024.md)
       - 2025-10-23
         - [result_美股_20251023_231326](/reports_his/result_美股_20251023_231326.md)
         - [result_法人進出_20251023](/reports_his/result_法人進出_20251023.md)
@@ -617,32 +617,32 @@
       - 2025-10-18
         - [result_us_osint_gemini_20251018_231312](/reports_his/result_us_osint_gemini_20251018_231312.md)
       - 2025-10-17
-        - [result_TW_report_20251017](/reports_his/result_TW_report_20251017.md)
         - [result_法人進出_20251017](/reports_his/result_法人進出_20251017.md)
         - [result_法人偷偷買_20251017](/reports_his/result_法人偷偷買_20251017.md)
         - [result_us_osint_gemini_20251017_231354](/reports_his/result_us_osint_gemini_20251017_231354.md)
         - [result_t86_precomputed_20251017](/reports_his/result_t86_precomputed_20251017.md)
         - [result_t86_osint_20251017](/reports_his/result_t86_osint_20251017.md)
+        - [result_TW_report_20251017](/reports_his/result_TW_report_20251017.md)
       - 2025-10-16
-        - [result_TW_report_20251016](/reports_his/result_TW_report_20251016.md)
         - [result_us_osint_gemini_20251016_231421](/reports_his/result_us_osint_gemini_20251016_231421.md)
+        - [result_TW_report_20251016](/reports_his/result_TW_report_20251016.md)
       - 2025-10-15
-        - [result_TW_report_20251015](/reports_his/result_TW_report_20251015.md)
         - [result_us_osint_gemini_20251015_231336](/reports_his/result_us_osint_gemini_20251015_231336.md)
+        - [result_TW_report_20251015](/reports_his/result_TW_report_20251015.md)
       - 2025-10-14
-        - [result_TW_report_20251014](/reports_his/result_TW_report_20251014.md)
         - [result_us_osint_gemini_20251014_231307](/reports_his/result_us_osint_gemini_20251014_231307.md)
+        - [result_TW_report_20251014](/reports_his/result_TW_report_20251014.md)
       - 2025-10-13
-        - [result_TW_report_20251013](/reports_his/result_TW_report_20251013.md)
         - [result_us_osint_gemini_20251013_231226](/reports_his/result_us_osint_gemini_20251013_231226.md)
+        - [result_TW_report_20251013](/reports_his/result_TW_report_20251013.md)
       - 2025-10-12
         - [result_us_osint_gemini_20251012_231327](/reports_his/result_us_osint_gemini_20251012_231327.md)
       - 2025-10-11
         - [result_us_osint_gemini_20251011_231243](/reports_his/result_us_osint_gemini_20251011_231243.md)
       - 2025-10-10
-        - [result_TW_report_20251010](/reports_his/result_TW_report_20251010.md)
         - [result_us_osint_gemini_20251010_231323](/reports_his/result_us_osint_gemini_20251010_231323.md)
+        - [result_TW_report_20251010](/reports_his/result_TW_report_20251010.md)
       - 2025-10-09
-        - [result_TW_report_20251009](/reports_his/result_TW_report_20251009.md)
         - [result_us_osint_gemini_20251009_231302](/reports_his/result_us_osint_gemini_20251009_231302.md)
         - [result_us_osint_gemini_20251009_140656](/reports_his/result_us_osint_gemini_20251009_140656.md)
+        - [result_TW_report_20251009](/reports_his/result_TW_report_20251009.md)
