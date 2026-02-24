@@ -3,9 +3,11 @@
   - 2026 年
     - 02 月
       - 2026-02-24
+        - [result_美股_20260224_015722](/reports_his/result_美股_20260224_015722.md)
         - [result_台股券商分點_20260224](/reports_his/result_台股券商分點_20260224.md)
         - [result_wave_score_20260224_summary_gai](/reports_his/result_wave_score_20260224_summary_gai.md)
         - [result_ind_report_20260224](/reports_his/result_ind_report_20260224.md)
+        - [result_combined_report_20260224](/reports_his/result_combined_report_20260224.md)
         - [📌 選股摘要 (20260224)](/reports_his/result_combined_reco_20260224.md)
       - 2026-02-23
         - [result_美股_20260223_015945](/reports_his/result_美股_20260223_015945.md)
