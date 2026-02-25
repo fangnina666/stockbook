@@ -4,6 +4,8 @@
     - 02 月
       - 2026-02-25
         - [result_美股_20260225_015925](/reports_his/result_美股_20260225_015925.md)
+        - [result_法人進出_20260225](/reports_his/result_法人進出_20260225.md)
+        - [result_法人偷偷買_20260225](/reports_his/result_法人偷偷買_20260225.md)
         - [result_wave_score_20260225_summary_gai](/reports_his/result_wave_score_20260225_summary_gai.md)
         - [result_ind_report_20260225](/reports_his/result_ind_report_20260225.md)
         - [result_combined_report_20260225](/reports_his/result_combined_report_20260225.md)
