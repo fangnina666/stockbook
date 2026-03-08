@@ -2,6 +2,8 @@
 - 報告列表
   - 2026 年
     - 03 月
+      - 2026-03-08
+        - [result_美股_20260308_015659](/reports_his/result_美股_20260308_015659.md)
       - 2026-03-07
         - [result_美股_20260307_014921](/reports_his/result_美股_20260307_014921.md)
         - [📌 選股摘要 (20260307)](/reports_his/result_combined_reco_20260307.md)
