@@ -7,6 +7,7 @@
         - [result_法人進出_20260312](/reports_his/result_法人進出_20260312.md)
         - [result_法人偷偷買_20260312](/reports_his/result_法人偷偷買_20260312.md)
         - [result_台股券商分點_20260312](/reports_his/result_台股券商分點_20260312.md)
+        - [📌 選股摘要 (20260312)](/reports_his/result_combined_reco_20260312.md)
       - 2026-03-11
         - [result_美股_20260311_015140](/reports_his/result_美股_20260311_015140.md)
         - [result_法人進出_20260311](/reports_his/result_法人進出_20260311.md)
