@@ -3,6 +3,8 @@
   - 2026 年
     - 03 月
       - 2026-03-16
+        - [result_法人進出_20260316](/reports_his/result_法人進出_20260316.md)
+        - [result_法人偷偷買_20260316](/reports_his/result_法人偷偷買_20260316.md)
         - [result_美股_20260316_021029](/reports_his/result_美股_20260316_021029.md)
       - 2026-03-15
         - [result_美股_20260315_020907](/reports_his/result_美股_20260315_020907.md)
