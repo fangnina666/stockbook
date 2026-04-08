@@ -7,6 +7,7 @@
         - [result_法人進出_20260408](/reports_his/result_法人進出_20260408.md)
         - [result_法人偷偷買_20260408](/reports_his/result_法人偷偷買_20260408.md)
         - [result_台股券商分點_20260408](/reports_his/result_台股券商分點_20260408.md)
+        - [📌 選股摘要 (20260408)](/reports_his/result_combined_reco_20260408.md)
       - 2026-04-07
         - [result_美股_20260407_020911](/reports_his/result_美股_20260407_020911.md)
         - [result_法人進出_20260407](/reports_his/result_法人進出_20260407.md)
