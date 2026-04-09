@@ -4,6 +4,8 @@
     - 04 月
       - 2026-04-09
         - [result_美股_20260409_020259](/reports_his/result_美股_20260409_020259.md)
+        - [result_法人進出_20260409](/reports_his/result_法人進出_20260409.md)
+        - [result_法人偷偷買_20260409](/reports_his/result_法人偷偷買_20260409.md)
       - 2026-04-08
         - [result_美股_20260408_021118](/reports_his/result_美股_20260408_021118.md)
         - [result_法人進出_20260408](/reports_his/result_法人進出_20260408.md)
