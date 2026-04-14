@@ -6,6 +6,7 @@
         - [result_美股_20260414_021628](/reports_his/result_美股_20260414_021628.md)
         - [result_法人進出_20260414](/reports_his/result_法人進出_20260414.md)
         - [result_法人偷偷買_20260414](/reports_his/result_法人偷偷買_20260414.md)
+        - [result_台股券商分點_20260414](/reports_his/result_台股券商分點_20260414.md)
       - 2026-04-13
         - [result_美股_20260413_023014](/reports_his/result_美股_20260413_023014.md)
         - [result_法人進出_20260413](/reports_his/result_法人進出_20260413.md)
