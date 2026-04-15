@@ -3,6 +3,7 @@
   - 2026 年
     - 04 月
       - 2026-04-15
+        - [📌 選股摘要 (20260415)](/reports_his/result_combined_reco_20260415.md)
         - [result_美股_20260415_021313](/reports_his/result_美股_20260415_021313.md)
         - [result_法人進出_20260415](/reports_his/result_法人進出_20260415.md)
         - [result_法人偷偷買_20260415](/reports_his/result_法人偷偷買_20260415.md)
