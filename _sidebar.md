@@ -6,6 +6,8 @@
         - [result_美股_20260423_022821](/reports_his/result_美股_20260423_022821.md)
         - [result_法人進出_20260423](/reports_his/result_法人進出_20260423.md)
         - [result_法人偷偷買_20260423](/reports_his/result_法人偷偷買_20260423.md)
+        - [result_台股券商分點_20260423](/reports_his/result_台股券商分點_20260423.md)
+        - [📌 選股摘要 (20260423)](/reports_his/result_combined_reco_20260423.md)
       - 2026-04-22
         - [result_美股_20260422_021601](/reports_his/result_美股_20260422_021601.md)
         - [result_法人進出_20260422](/reports_his/result_法人進出_20260422.md)
