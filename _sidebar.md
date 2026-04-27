@@ -3,11 +3,11 @@
   - 2026 年
     - 04 月
       - 2026-04-27
-        - [result_台股券商分點_20260427](/reports_his/result_台股券商分點_20260427.md)
-        - [📌 選股摘要 (20260427)](/reports_his/result_combined_reco_20260427.md)
         - [result_美股_20260427_023447](/reports_his/result_美股_20260427_023447.md)
         - [result_法人進出_20260427](/reports_his/result_法人進出_20260427.md)
         - [result_法人偷偷買_20260427](/reports_his/result_法人偷偷買_20260427.md)
+        - [result_台股券商分點_20260427](/reports_his/result_台股券商分點_20260427.md)
+        - [📌 選股摘要 (20260427)](/reports_his/result_combined_reco_20260427.md)
       - 2026-04-26
         - [result_美股_20260426_023326](/reports_his/result_美股_20260426_023326.md)
         - [📌 選股摘要 (20260426)](/reports_his/result_combined_reco_20260426.md)
