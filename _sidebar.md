@@ -1,6 +1,9 @@
 - [首頁](/README.md)
 - 報告列表
   - 2026 年
+    - 05 月
+      - 2026-05-01
+        - [📌 選股摘要 (20260501)](/reports_his/result_combined_reco_20260501.md)
     - 04 月
       - 2026-04-30
         - [result_法人進出_20260430](/reports_his/result_法人進出_20260430.md)
