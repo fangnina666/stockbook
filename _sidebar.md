@@ -2,6 +2,9 @@
 - 報告列表
   - 2026 年
     - 05 月
+      - 2026-05-05
+        - [result_法人進出_20260505](/reports_his/result_法人進出_20260505.md)
+        - [result_法人偷偷買_20260505](/reports_his/result_法人偷偷買_20260505.md)
       - 2026-05-04
         - [result_法人進出_20260504](/reports_his/result_法人進出_20260504.md)
         - [result_法人偷偷買_20260504](/reports_his/result_法人偷偷買_20260504.md)
