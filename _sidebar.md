@@ -5,6 +5,7 @@
       - 2026-05-06
         - [result_法人進出_20260506](/reports_his/result_法人進出_20260506.md)
         - [result_法人偷偷買_20260506](/reports_his/result_法人偷偷買_20260506.md)
+        - [result_台股券商分點_20260506](/reports_his/result_台股券商分點_20260506.md)
         - [📌 選股摘要 (20260506)](/reports_his/result_combined_reco_20260506.md)
       - 2026-05-05
         - [result_法人進出_20260505](/reports_his/result_法人進出_20260505.md)
