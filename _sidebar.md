@@ -2,6 +2,8 @@
 - 報告列表
   - 2026 年
     - 05 月
+      - 2026-05-10
+        - [result_美股_20260510_024541](/reports_his/result_美股_20260510_024541.md)
       - 2026-05-09
         - [result_美股_20260509_023926](/reports_his/result_美股_20260509_023926.md)
         - [📌 選股摘要 (20260509)](/reports_his/result_combined_reco_20260509.md)
