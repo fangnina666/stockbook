@@ -4,6 +4,7 @@
     - 05 月
       - 2026-05-23
         - [result_美股_20260523_024637](/reports_his/result_美股_20260523_024637.md)
+        - [📌 選股摘要 (20260523)](/reports_his/result_combined_reco_20260523.md)
       - 2026-05-22
         - [result_美股_20260522_030120](/reports_his/result_美股_20260522_030120.md)
         - [result_法人進出_20260522](/reports_his/result_法人進出_20260522.md)
