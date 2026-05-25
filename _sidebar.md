@@ -6,6 +6,7 @@
         - [result_美股_20260525_033458](/reports_his/result_美股_20260525_033458.md)
         - [result_法人進出_20260525](/reports_his/result_法人進出_20260525.md)
         - [result_法人偷偷買_20260525](/reports_his/result_法人偷偷買_20260525.md)
+        - [📌 選股摘要 (20260525)](/reports_his/result_combined_reco_20260525.md)
       - 2026-05-24
         - [result_美股_20260524_025849](/reports_his/result_美股_20260524_025849.md)
         - [📌 選股摘要 (20260524)](/reports_his/result_combined_reco_20260524.md)
