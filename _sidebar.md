@@ -4,10 +4,12 @@
     - 05 月
       - 2026-05-26
         - [result_美股_20260526_025423](/reports_his/result_美股_20260526_025423.md)
+        - [📌 選股摘要 (20260526)](/reports_his/result_combined_reco_20260526.md)
       - 2026-05-25
         - [result_美股_20260525_033458](/reports_his/result_美股_20260525_033458.md)
         - [result_法人進出_20260525](/reports_his/result_法人進出_20260525.md)
         - [result_法人偷偷買_20260525](/reports_his/result_法人偷偷買_20260525.md)
+        - [result_台股券商分點_20260525](/reports_his/result_台股券商分點_20260525.md)
         - [📌 選股摘要 (20260525)](/reports_his/result_combined_reco_20260525.md)
       - 2026-05-24
         - [result_美股_20260524_025849](/reports_his/result_美股_20260524_025849.md)
