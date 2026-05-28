@@ -4,6 +4,7 @@
     - 05 月
       - 2026-05-28
         - [result_美股_20260528_025329](/reports_his/result_美股_20260528_025329.md)
+        - [result_台股券商分點_20260528](/reports_his/result_台股券商分點_20260528.md)
       - 2026-05-27
         - [result_美股_20260527_033336](/reports_his/result_美股_20260527_033336.md)
         - [result_法人進出_20260527](/reports_his/result_法人進出_20260527.md)
