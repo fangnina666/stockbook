@@ -4,6 +4,7 @@
     - 06 月
       - 2026-06-10
         - [result_美股_20260610_032914](/reports_his/result_美股_20260610_032914.md)
+        - [result_台股券商分點_20260610](/reports_his/result_台股券商分點_20260610.md)
       - 2026-06-09
         - [result_美股_20260609_025254](/reports_his/result_美股_20260609_025254.md)
         - [result_台股券商分點_20260609](/reports_his/result_台股券商分點_20260609.md)
