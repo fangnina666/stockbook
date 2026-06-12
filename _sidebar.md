@@ -5,6 +5,7 @@
       - 2026-06-12
         - [result_美股_20260612_034202](/reports_his/result_美股_20260612_034202.md)
         - [result_台股券商分點_20260612](/reports_his/result_台股券商分點_20260612.md)
+        - [📌 選股摘要 (20260612)](/reports_his/result_combined_reco_20260612.md)
       - 2026-06-11
         - [result_美股_20260611_034127](/reports_his/result_美股_20260611_034127.md)
         - [result_法人進出_20260611](/reports_his/result_法人進出_20260611.md)
