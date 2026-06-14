@@ -4,6 +4,7 @@
     - 06 月
       - 2026-06-14
         - [result_美股_20260614_034534](/reports_his/result_美股_20260614_034534.md)
+        - [📌 選股摘要 (20260614)](/reports_his/result_combined_reco_20260614.md)
       - 2026-06-13
         - [result_美股_20260613_032858](/reports_his/result_美股_20260613_032858.md)
         - [📌 選股摘要 (20260613)](/reports_his/result_combined_reco_20260613.md)
