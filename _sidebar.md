@@ -2,6 +2,11 @@
 - 報告列表
   - 2026 年
     - 07 月
+      - 2026-07-04
+        - [wavescore-zhi-biao-shuo-ming-wen-jian](/reports_his/wavescore-zhi-biao-shuo-ming-wen-jian.md)
+        - [result_美股_20260704_023900](/reports_his/result_美股_20260704_023900.md)
+        - [email_body](/reports_his/email_body.md)
+        - [README](/reports_his/README.md)
       - 2026-07-03
         - [result_美股_20260703_024145](/reports_his/result_美股_20260703_024145.md)
         - [result_法人進出_20260703](/reports_his/result_法人進出_20260703.md)
@@ -1259,24 +1264,109 @@
         - [result_TW_report_20251017](/reports_his/result_TW_report_20251017.md)
       - 2025-10-16
         - [result_us_osint_gemini_20251016_231421](/reports_his/result_us_osint_gemini_20251016_231421.md)
+        - [result_tw_report_20251016](/reports_his/result_tw_report_20251016.md)
         - [result_TW_report_20251016](/reports_his/result_TW_report_20251016.md)
+        - [mei-gu-osint-yu-qing-fen-xi-bao-gao-20251006-20251016](/reports_his/mei-gu-osint-yu-qing-fen-xi-bao-gao-20251006-20251016.md)
       - 2025-10-15
         - [result_us_osint_gemini_20251015_231336](/reports_his/result_us_osint_gemini_20251015_231336.md)
+        - [result_tw_report_20251015](/reports_his/result_tw_report_20251015.md)
         - [result_TW_report_20251015](/reports_his/result_TW_report_20251015.md)
       - 2025-10-14
         - [result_us_osint_gemini_20251014_231307](/reports_his/result_us_osint_gemini_20251014_231307.md)
+        - [result_tw_report_20251014](/reports_his/result_tw_report_20251014.md)
         - [result_TW_report_20251014](/reports_his/result_TW_report_20251014.md)
+        - [mei-gu-osint-yu-qing-fen-xi-bao-gao-20251004-20251014](/reports_his/mei-gu-osint-yu-qing-fen-xi-bao-gao-20251004-20251014.md)
       - 2025-10-13
         - [result_us_osint_gemini_20251013_231226](/reports_his/result_us_osint_gemini_20251013_231226.md)
+        - [result_tw_report_20251013](/reports_his/result_tw_report_20251013.md)
         - [result_TW_report_20251013](/reports_his/result_TW_report_20251013.md)
+        - [mei-gu-osint-yu-qing-fen-xi-bao-gao-20251003-20251013](/reports_his/mei-gu-osint-yu-qing-fen-xi-bao-gao-20251003-20251013.md)
       - 2025-10-12
         - [result_us_osint_gemini_20251012_231327](/reports_his/result_us_osint_gemini_20251012_231327.md)
+        - [mei-gu-osint-yu-qing-fen-xi-20251002-20251012](/reports_his/mei-gu-osint-yu-qing-fen-xi-20251002-20251012.md)
       - 2025-10-11
         - [result_us_osint_gemini_20251011_231243](/reports_his/result_us_osint_gemini_20251011_231243.md)
+        - [mei-gu-osint-yu-qing-fen-xi-bao-gao-20251001-20251011](/reports_his/mei-gu-osint-yu-qing-fen-xi-bao-gao-20251001-20251011.md)
       - 2025-10-10
         - [result_us_osint_gemini_20251010_231323](/reports_his/result_us_osint_gemini_20251010_231323.md)
+        - [result_tw_report_20251010](/reports_his/result_tw_report_20251010.md)
         - [result_TW_report_20251010](/reports_his/result_TW_report_20251010.md)
+        - [mei-gu-osint-yu-qing-fen-xi-20250930-20251010](/reports_his/mei-gu-osint-yu-qing-fen-xi-20250930-20251010.md)
       - 2025-10-09
         - [result_us_osint_gemini_20251009_231302](/reports_his/result_us_osint_gemini_20251009_231302.md)
         - [result_us_osint_gemini_20251009_140656](/reports_his/result_us_osint_gemini_20251009_140656.md)
+        - [result_tw_report_20251009](/reports_his/result_tw_report_20251009.md)
         - [result_TW_report_20251009](/reports_his/result_TW_report_20251009.md)
+        - [mei-gu-osint-yu-qing-fen-xi-bao-gao-20250929-20251009](/reports_his/mei-gu-osint-yu-qing-fen-xi-bao-gao-20250929-20251009.md)
+        - [mei-gu-osint-yu-qing-fen-xi-bao-gao-20250929-20251009-1](/reports_his/mei-gu-osint-yu-qing-fen-xi-bao-gao-20250929-20251009-1.md)
+        - [mei-gu-osint-yu-qing-fen-xi-20250929-20251009](/reports_his/mei-gu-osint-yu-qing-fen-xi-20250929-20251009.md)
+      - 2025-10-08
+        - [wavescore-zhi-neng-bao-gao-20251008](/reports_his/wavescore-zhi-neng-bao-gao-20251008.md)
+        - [wavescore-yi-chang-chou-ma-gong-zhen-bao-gao-20251008](/reports_his/wavescore-yi-chang-chou-ma-gong-zhen-bao-gao-20251008.md)
+        - [combined_report_20251008](/reports_his/combined_report_20251008.md)
+        - [abnormal_table_20251008](/reports_his/abnormal_table_20251008.md)
+        - [20251008-yi-chang-chou-ma-fen-xi-bao-gao](/reports_his/20251008-yi-chang-chou-ma-fen-xi-bao-gao.md)
+      - 2025-10-07
+        - [wavescore-zhi-neng-bao-gao-20251007](/reports_his/wavescore-zhi-neng-bao-gao-20251007.md)
+        - [wavescore-yi-chang-chou-ma-gong-zhen-bao-gao-20251007](/reports_his/wavescore-yi-chang-chou-ma-gong-zhen-bao-gao-20251007.md)
+        - [combined_report_20251007](/reports_his/combined_report_20251007.md)
+        - [abnormal_table_20251007](/reports_his/abnormal_table_20251007.md)
+        - [20251007-yi-chang-chou-ma-fen-xi-bao-gao](/reports_his/20251007-yi-chang-chou-ma-fen-xi-bao-gao.md)
+      - 2025-10-06
+        - [wavescore-yi-chang-chou-ma-gong-zhen-bao-gao-20251006](/reports_his/wavescore-yi-chang-chou-ma-gong-zhen-bao-gao-20251006.md)
+        - [gai_report_20251006](/reports_his/gai_report_20251006.md)
+        - [combined_report_20251006](/reports_his/combined_report_20251006.md)
+      - 2025-10-03
+        - [abnormal_table_20251003](/reports_his/abnormal_table_20251003.md)
+        - [20251003-yi-chang-chou-ma-fen-xi-bao-gao](/reports_his/20251003-yi-chang-chou-ma-fen-xi-bao-gao.md)
+    - 09 月
+      - 2025-09-16
+        - [osint_stealth_openai_20250916_120822](/reports_his/osint_stealth_openai_20250916_120822.md)
+        - [osint_stealth_gemini_20250916_120822](/reports_his/osint_stealth_gemini_20250916_120822.md)
+      - 2025-09-15
+        - [osint_stealth_openai_20250915_234123](/reports_his/osint_stealth_openai_20250915_234123.md)
+        - [osint_stealth_openai_20250915_151757](/reports_his/osint_stealth_openai_20250915_151757.md)
+        - [osint_stealth_openai_20250915_145853](/reports_his/osint_stealth_openai_20250915_145853.md)
+        - [osint_stealth_openai_20250915_140122](/reports_his/osint_stealth_openai_20250915_140122.md)
+        - [osint_stealth_openai_20250915_130945](/reports_his/osint_stealth_openai_20250915_130945.md)
+        - [osint_stealth_openai_20250915_123122](/reports_his/osint_stealth_openai_20250915_123122.md)
+        - [osint_stealth_openai_20250915_121018](/reports_his/osint_stealth_openai_20250915_121018.md)
+        - [osint_stealth_gemini_20250915_234123](/reports_his/osint_stealth_gemini_20250915_234123.md)
+        - [osint_stealth_gemini_20250915_151757](/reports_his/osint_stealth_gemini_20250915_151757.md)
+        - [osint_stealth_gemini_20250915_145853](/reports_his/osint_stealth_gemini_20250915_145853.md)
+        - [osint_stealth_gemini_20250915_140122](/reports_his/osint_stealth_gemini_20250915_140122.md)
+        - [osint_stealth_gemini_20250915_130945](/reports_his/osint_stealth_gemini_20250915_130945.md)
+        - [osint_stealth_gemini_20250915_123122](/reports_his/osint_stealth_gemini_20250915_123122.md)
+        - [osint_stealth_gemini_20250915_121018](/reports_his/osint_stealth_gemini_20250915_121018.md)
+      - 2025-09-14
+        - [osint_stealth_openai_20250914_234323](/reports_his/osint_stealth_openai_20250914_234323.md)
+        - [osint_stealth_openai_20250914_135401](/reports_his/osint_stealth_openai_20250914_135401.md)
+        - [osint_stealth_openai_20250914_085212](/reports_his/osint_stealth_openai_20250914_085212.md)
+        - [osint_stealth_openai_20250914_012310](/reports_his/osint_stealth_openai_20250914_012310.md)
+        - [osint_stealth_openai_20250914_003323](/reports_his/osint_stealth_openai_20250914_003323.md)
+        - [osint_stealth_gemini_20250914_234323](/reports_his/osint_stealth_gemini_20250914_234323.md)
+        - [osint_stealth_gemini_20250914_135401](/reports_his/osint_stealth_gemini_20250914_135401.md)
+        - [osint_stealth_gemini_20250914_085212](/reports_his/osint_stealth_gemini_20250914_085212.md)
+        - [osint_stealth_gemini_20250914_012310](/reports_his/osint_stealth_gemini_20250914_012310.md)
+        - [osint_stealth_gemini_20250914_003323](/reports_his/osint_stealth_gemini_20250914_003323.md)
+      - 2025-09-13
+        - [osint_stealth_openai_20250913_153850](/reports_his/osint_stealth_openai_20250913_153850.md)
+        - [osint_stealth_openai_20250913_152630](/reports_his/osint_stealth_openai_20250913_152630.md)
+        - [osint_stealth_openai_20250913_145520](/reports_his/osint_stealth_openai_20250913_145520.md)
+        - [osint_stealth_openai_20250913_143239](/reports_his/osint_stealth_openai_20250913_143239.md)
+        - [osint_stealth_openai_20250913_142016](/reports_his/osint_stealth_openai_20250913_142016.md)
+        - [osint_stealth_openai_20250913_133624](/reports_his/osint_stealth_openai_20250913_133624.md)
+        - [osint_stealth_openai_20250913_130754](/reports_his/osint_stealth_openai_20250913_130754.md)
+        - [osint_stealth_openai_20250913_125352](/reports_his/osint_stealth_openai_20250913_125352.md)
+        - [osint_stealth_openai_20250913_120158](/reports_his/osint_stealth_openai_20250913_120158.md)
+        - [osint_stealth_openai_20250913_113954](/reports_his/osint_stealth_openai_20250913_113954.md)
+        - [osint_stealth_gemini_20250913_153850](/reports_his/osint_stealth_gemini_20250913_153850.md)
+        - [osint_stealth_gemini_20250913_152630](/reports_his/osint_stealth_gemini_20250913_152630.md)
+        - [osint_stealth_gemini_20250913_145520](/reports_his/osint_stealth_gemini_20250913_145520.md)
+        - [osint_stealth_gemini_20250913_143239](/reports_his/osint_stealth_gemini_20250913_143239.md)
+        - [osint_stealth_gemini_20250913_142016](/reports_his/osint_stealth_gemini_20250913_142016.md)
+        - [osint_stealth_gemini_20250913_133624](/reports_his/osint_stealth_gemini_20250913_133624.md)
+        - [osint_stealth_gemini_20250913_130754](/reports_his/osint_stealth_gemini_20250913_130754.md)
+        - [osint_stealth_gemini_20250913_125352](/reports_his/osint_stealth_gemini_20250913_125352.md)
+        - [osint_stealth_gemini_20250913_120158](/reports_his/osint_stealth_gemini_20250913_120158.md)
+        - [osint_stealth_gemini_20250913_113954](/reports_his/osint_stealth_gemini_20250913_113954.md)
