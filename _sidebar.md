@@ -9,6 +9,8 @@
         - [README](/reports_his/README.md)
       - 2026-07-09
         - [result_美股_20260709_024209](/reports_his/result_美股_20260709_024209.md)
+        - [result_法人進出_20260709](/reports_his/result_法人進出_20260709.md)
+        - [result_法人偷偷買_20260709](/reports_his/result_法人偷偷買_20260709.md)
         - [📌 選股摘要 (20260709)](/reports_his/result_combined_reco_20260709.md)
       - 2026-07-08
         - [result_美股_20260708_022744](/reports_his/result_美股_20260708_022744.md)
