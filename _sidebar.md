@@ -7,6 +7,7 @@
         - [result_美股_20260727_023930](/reports_his/result_美股_20260727_023930.md)
         - [result_法人進出_20260727](/reports_his/result_法人進出_20260727.md)
         - [result_法人偷偷買_20260727](/reports_his/result_法人偷偷買_20260727.md)
+        - [📌 選股摘要 (20260727)](/reports_his/result_combined_reco_20260727.md)
         - [email_body](/reports_his/email_body.md)
         - [README](/reports_his/README.md)
       - 2026-07-26
