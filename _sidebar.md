@@ -2,14 +2,15 @@
 - 報告列表
   - 2026 年
     - 07 月
-      - 2026-07-27
+      - 2026-07-28
         - [wavescore-zhi-biao-shuo-ming-wen-jian](/reports_his/wavescore-zhi-biao-shuo-ming-wen-jian.md)
+        - [email_body](/reports_his/email_body.md)
+        - [README](/reports_his/README.md)
+      - 2026-07-27
         - [result_美股_20260727_023930](/reports_his/result_美股_20260727_023930.md)
         - [result_法人進出_20260727](/reports_his/result_法人進出_20260727.md)
         - [result_法人偷偷買_20260727](/reports_his/result_法人偷偷買_20260727.md)
         - [📌 選股摘要 (20260727)](/reports_his/result_combined_reco_20260727.md)
-        - [email_body](/reports_his/email_body.md)
-        - [README](/reports_his/README.md)
       - 2026-07-26
         - [result_美股_20260726_023133](/reports_his/result_美股_20260726_023133.md)
         - [📌 選股摘要 (20260726)](/reports_his/result_combined_reco_20260726.md)
