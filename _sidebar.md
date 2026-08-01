@@ -4,6 +4,7 @@
     - 08 月
       - 2026-08-01
         - [wavescore-zhi-biao-shuo-ming-wen-jian](/reports_his/wavescore-zhi-biao-shuo-ming-wen-jian.md)
+        - [result_美股_20260801_023236](/reports_his/result_美股_20260801_023236.md)
         - [email_body](/reports_his/email_body.md)
         - [README](/reports_his/README.md)
     - 07 月
