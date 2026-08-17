@@ -7,6 +7,7 @@
         - [result_美股_20260817_010546](/reports_his/result_美股_20260817_010546.md)
         - [result_法人進出_20260817](/reports_his/result_法人進出_20260817.md)
         - [result_法人偷偷買_20260817](/reports_his/result_法人偷偷買_20260817.md)
+        - [result_台股券商分點_20260817](/reports_his/result_台股券商分點_20260817.md)
         - [email_body](/reports_his/email_body.md)
         - [README](/reports_his/README.md)
       - 2026-08-16
