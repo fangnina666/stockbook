@@ -4,6 +4,7 @@
     - 08 月
       - 2026-08-28
         - [wavescore-zhi-biao-shuo-ming-wen-jian](/reports_his/wavescore-zhi-biao-shuo-ming-wen-jian.md)
+        - [result_美股_20260828_085748](/reports_his/result_美股_20260828_085748.md)
         - [📌 選股摘要 (20260828)](/reports_his/result_combined_reco_20260828.md)
         - [email_body](/reports_his/email_body.md)
         - [README](/reports_his/README.md)
