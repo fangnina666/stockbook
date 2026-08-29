@@ -5,6 +5,7 @@
       - 2026-08-29
         - [wavescore-zhi-biao-shuo-ming-wen-jian](/reports_his/wavescore-zhi-biao-shuo-ming-wen-jian.md)
         - [result_美股_20260829_053350](/reports_his/result_美股_20260829_053350.md)
+        - [📌 選股摘要 (20260829)](/reports_his/result_combined_reco_20260829.md)
         - [email_body](/reports_his/email_body.md)
         - [README](/reports_his/README.md)
       - 2026-08-28
