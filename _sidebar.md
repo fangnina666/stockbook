@@ -5,6 +5,9 @@
       - 2026-08-31
         - [wavescore-zhi-biao-shuo-ming-wen-jian](/reports_his/wavescore-zhi-biao-shuo-ming-wen-jian.md)
         - [result_美股_20260831_032840](/reports_his/result_美股_20260831_032840.md)
+        - [result_法人進出_20260831](/reports_his/result_法人進出_20260831.md)
+        - [result_法人偷偷買_20260831](/reports_his/result_法人偷偷買_20260831.md)
+        - [📌 選股摘要 (20260831)](/reports_his/result_combined_reco_20260831.md)
         - [email_body](/reports_his/email_body.md)
         - [README](/reports_his/README.md)
       - 2026-08-30
@@ -17,6 +20,7 @@
         - [result_美股_20260828_085748](/reports_his/result_美股_20260828_085748.md)
         - [result_法人進出_20260828](/reports_his/result_法人進出_20260828.md)
         - [result_法人偷偷買_20260828](/reports_his/result_法人偷偷買_20260828.md)
+        - [result_台股券商分點_20260828](/reports_his/result_台股券商分點_20260828.md)
         - [📌 選股摘要 (20260828)](/reports_his/result_combined_reco_20260828.md)
       - 2026-08-27
         - [result_美股_20260827_071041](/reports_his/result_美股_20260827_071041.md)
