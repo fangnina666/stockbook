@@ -7,6 +7,7 @@
         - [result_美股_20260901_032956](/reports_his/result_美股_20260901_032956.md)
         - [result_法人進出_20260901](/reports_his/result_法人進出_20260901.md)
         - [result_法人偷偷買_20260901](/reports_his/result_法人偷偷買_20260901.md)
+        - [📌 選股摘要 (20260901)](/reports_his/result_combined_reco_20260901.md)
         - [email_body](/reports_his/email_body.md)
         - [README](/reports_his/README.md)
     - 08 月
@@ -14,6 +15,7 @@
         - [result_美股_20260831_032840](/reports_his/result_美股_20260831_032840.md)
         - [result_法人進出_20260831](/reports_his/result_法人進出_20260831.md)
         - [result_法人偷偷買_20260831](/reports_his/result_法人偷偷買_20260831.md)
+        - [result_台股券商分點_20260831](/reports_his/result_台股券商分點_20260831.md)
         - [📌 選股摘要 (20260831)](/reports_his/result_combined_reco_20260831.md)
       - 2026-08-30
         - [result_美股_20260830_033036](/reports_his/result_美股_20260830_033036.md)
