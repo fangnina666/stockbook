@@ -4,6 +4,7 @@
     - 09 月
       - 2026-09-02
         - [wavescore-zhi-biao-shuo-ming-wen-jian](/reports_his/wavescore-zhi-biao-shuo-ming-wen-jian.md)
+        - [result_美股_20260902_024647](/reports_his/result_美股_20260902_024647.md)
         - [email_body](/reports_his/email_body.md)
         - [README](/reports_his/README.md)
       - 2026-09-01
