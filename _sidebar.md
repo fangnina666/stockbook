@@ -5,12 +5,14 @@
       - 2026-09-10
         - [wavescore-zhi-biao-shuo-ming-wen-jian](/reports_his/wavescore-zhi-biao-shuo-ming-wen-jian.md)
         - [result_美股_20260910_025953](/reports_his/result_美股_20260910_025953.md)
+        - [📌 選股摘要 (20260910)](/reports_his/result_combined_reco_20260910.md)
         - [email_body](/reports_his/email_body.md)
         - [README](/reports_his/README.md)
       - 2026-09-09
         - [result_美股_20260909_025917](/reports_his/result_美股_20260909_025917.md)
         - [result_法人進出_20260909](/reports_his/result_法人進出_20260909.md)
         - [result_法人偷偷買_20260909](/reports_his/result_法人偷偷買_20260909.md)
+        - [result_台股券商分點_20260909](/reports_his/result_台股券商分點_20260909.md)
         - [📌 選股摘要 (20260909)](/reports_his/result_combined_reco_20260909.md)
       - 2026-09-08
         - [result_美股_20260908_025846](/reports_his/result_美股_20260908_025846.md)
