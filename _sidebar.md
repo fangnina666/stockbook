@@ -2,11 +2,13 @@
 - 報告列表
   - 2026 年
     - 09 月
-      - 2026-09-25
+      - 2026-09-26
         - [wavescore-zhi-biao-shuo-ming-wen-jian](/reports_his/wavescore-zhi-biao-shuo-ming-wen-jian.md)
-        - [result_美股_20260925_032119](/reports_his/result_美股_20260925_032119.md)
         - [email_body](/reports_his/email_body.md)
         - [README](/reports_his/README.md)
+      - 2026-09-25
+        - [result_美股_20260925_032119](/reports_his/result_美股_20260925_032119.md)
+        - [📌 選股摘要 (20260925)](/reports_his/result_combined_reco_20260925.md)
       - 2026-09-24
         - [result_美股_20260924_030354](/reports_his/result_美股_20260924_030354.md)
         - [result_法人進出_20260924](/reports_his/result_法人進出_20260924.md)
