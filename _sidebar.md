@@ -5,6 +5,8 @@
       - 2026-10-01
         - [wavescore-zhi-biao-shuo-ming-wen-jian](/reports_his/wavescore-zhi-biao-shuo-ming-wen-jian.md)
         - [result_美股_20261001_040255](/reports_his/result_美股_20261001_040255.md)
+        - [result_法人進出_20261001](/reports_his/result_法人進出_20261001.md)
+        - [result_法人偷偷買_20261001](/reports_his/result_法人偷偷買_20261001.md)
         - [email_body](/reports_his/email_body.md)
         - [README](/reports_his/README.md)
     - 09 月
