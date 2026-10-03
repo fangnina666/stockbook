@@ -10,6 +10,8 @@
         - [result_美股_20261002_035929](/reports_his/result_美股_20261002_035929.md)
         - [result_法人進出_20261002](/reports_his/result_法人進出_20261002.md)
         - [result_法人偷偷買_20261002](/reports_his/result_法人偷偷買_20261002.md)
+        - [result_台股券商分點_20261002](/reports_his/result_台股券商分點_20261002.md)
+        - [📌 選股摘要 (20261002)](/reports_his/result_combined_reco_20261002.md)
       - 2026-10-01
         - [result_美股_20261001_040255](/reports_his/result_美股_20261001_040255.md)
         - [result_法人進出_20261001](/reports_his/result_法人進出_20261001.md)
