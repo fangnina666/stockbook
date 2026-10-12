@@ -2,7 +2,7 @@
 - 報告列表
   - 2026 年
     - 10 月
-      - 2026-10-11
+      - 2026-10-12
         - [wavescore-zhi-biao-shuo-ming-wen-jian](/reports_his/wavescore-zhi-biao-shuo-ming-wen-jian.md)
         - [email_body](/reports_his/email_body.md)
         - [README](/reports_his/README.md)
