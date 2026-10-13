@@ -4,8 +4,11 @@
     - 10 月
       - 2026-10-13
         - [wavescore-zhi-biao-shuo-ming-wen-jian](/reports_his/wavescore-zhi-biao-shuo-ming-wen-jian.md)
+        - [📌 選股摘要 (20261013)](/reports_his/result_combined_reco_20261013.md)
         - [email_body](/reports_his/email_body.md)
         - [README](/reports_his/README.md)
+      - 2026-10-12
+        - [result_台股券商分點_20261012](/reports_his/result_台股券商分點_20261012.md)
       - 2026-10-09
         - [📌 選股摘要 (20261009)](/reports_his/result_combined_reco_20261009.md)
       - 2026-10-08
