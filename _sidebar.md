@@ -4,6 +4,7 @@
     - 10 月
       - 2026-10-15
         - [wavescore-zhi-biao-shuo-ming-wen-jian](/reports_his/wavescore-zhi-biao-shuo-ming-wen-jian.md)
+        - [result_美股_20261015_112334](/reports_his/result_美股_20261015_112334.md)
         - [result_美股_20261015_030712](/reports_his/result_美股_20261015_030712.md)
         - [email_body](/reports_his/email_body.md)
         - [README](/reports_his/README.md)
