@@ -7,6 +7,7 @@
         - [result_美股_20261020_031913](/reports_his/result_美股_20261020_031913.md)
         - [result_法人進出_20261020](/reports_his/result_法人進出_20261020.md)
         - [result_法人偷偷買_20261020](/reports_his/result_法人偷偷買_20261020.md)
+        - [result_台股券商分點_20261020](/reports_his/result_台股券商分點_20261020.md)
         - [📌 選股摘要 (20261020)](/reports_his/result_combined_reco_20261020.md)
         - [email_body](/reports_his/email_body.md)
         - [README](/reports_his/README.md)
