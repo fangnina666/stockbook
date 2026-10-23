@@ -55,5 +55,23 @@
   <!-- Plugin 需在 docsify 後面載入 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+
+  <!-- 在你的網頁中加入這段 HTML 容器 -->
+  <div style="text-align: center; margin-top: 20px; font-size: 14px; color: #666;">
+    👀 本站總瀏覽人次：<span id="visit-count">載入中...</span>
+  </div>
+  
+  <!-- 搭配這段 JavaScript 自動抓取與累加次數 -->
+  <script>
+    fetch('https://api.countapi.xyz/hit/fangnina666-stockbook/visits')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('visit-count').innerText = data.value;
+      })
+      .catch(error => {
+        document.getElementById('visit-count').innerText = '計算中';
+      });
+</script>
+
 </body>
 </html>
