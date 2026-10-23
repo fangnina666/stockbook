@@ -5,18 +5,13 @@
   <title>StockBook</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
-  <!-- 引入 Docsify Vue 佈景主題 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
-  
-  <!-- 側邊欄折疊樣式 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.css" />
 
   <style>
-    /* 強制頁面可垂直捲動 */
     html, body { height: 100%; }
     body { overflow-y: auto; }
     
-    /* 下拉選單美化樣式 */
     .sidebar-report-select {
       padding: 12px 10px;
       background: #f8f9fa;
@@ -40,7 +35,6 @@
     }
   </style>
 
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-116QT56CXC"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -53,7 +47,6 @@
   <div id="app">Loading…</div>
 
   <script>
-    // 下拉選單跳轉邏輯
     function jumpToReport(selectElement) {
       if (selectElement.value) {
         location.href = selectElement.value;
@@ -73,7 +66,6 @@
         noData: '沒有找到結果',
         maxAge: 86400000
       },
-      // 透過 Docsify 外掛在網頁載入時自動把下拉選單插入側邊欄最上方
       plugins: [
         function (hook, vm) {
           hook.doneEach(function () {
@@ -82,31 +74,77 @@
               const selectContainer = document.createElement('div');
               selectContainer.className = 'sidebar-report-select';
               selectContainer.innerHTML = `
-                <label for="md-select">📂 快速選擇報告：</label><br>
+                <label for="md-select">📂 快速選擇全部報告：</label><br>
                 <select id="md-select" onchange="jumpToReport(this)">
-                  <!-- 🟢 請在這裡維護你的報告清單（最新的排在最上面） -->
-                  <option value="#/reports_his/2026/10/2026-10-22">2026-10-22 異常籌碼分析</option>
-                  <option value="#/reports_his/2026/10/2026-10-21">2026-10-21 異常籌碼分析</option>
-                  <option value="#/reports_his/2026/10/2026-10-20">2026-10-20 異常籌碼分析</option>
+                  <option value="">-- 載入全部報告中 --</option>
                 </select>
               `;
               sidebar.insertBefore(selectContainer, sidebar.firstChild);
-            }
 
-            // 自動預選或同步當前頁面
-            const select = document.getElementById('md-select');
-            if (select) {
-              if (!location.hash || location.hash === '#/' || location.hash === '') {
-                select.selectedIndex = 0;
-                location.href = select.options[0].value; // 剛進站自動跳轉到最新一篇
-              } else {
-                for (let i = 0; i < select.options.length; i++) {
-                  if (location.hash.includes(select.options[i].value.replace('#', ''))) {
-                    select.selectedIndex = i;
-                    break;
+              // 自動抓取側邊欄內的所有連結與階層，轉化為下拉選單的 optgroup 分群
+              setTimeout(() => {
+                const select = document.getElementById('md-select');
+                if (!select) return;
+                select.innerHTML = '<option value="">-- 請選擇報告 --</option>';
+
+                const sidebarNav = document.querySelector('.sidebar-nav');
+                if (!sidebarNav) return;
+
+                // 抓取側邊欄的所有li或夾層，透過年份與月份建立階層群組 (optgroup)
+                const links = sidebarNav.querySelectorAll('a');
+                let currentGroup = null;
+                let groups = {};
+
+                links.forEach(link => {
+                  const href = link.getAttribute('href');
+                  const text = link.innerText.trim();
+
+                  // 過濾掉首頁或非報告的連結
+                  if (!href || href.includes('README') || href.includes('Uindex') || text === '首頁' || text === '報告列表') return;
+
+                  // 嘗試從文字或連結路徑解析出 年份 / 月份 階層
+                  let groupName = '其他報告';
+                  const match = href.match(/(\d{4})[/-](\d{2})/);
+                  if (match) {
+                    groupName = `${match[1]} 年 ${match[2]} 月`;
+                  } else {
+                    // 從文字找日期格式
+                    const textMatch = text.match(/(\d{4})[.-](\d{2})/);
+                    if (textMatch) {
+                      groupName = `${textMatch[1]} 年 ${textMatch[2]} 月`;
+                    }
                   }
+
+                  if (!groups[groupName]) {
+                    groups[groupName] = [];
+                  }
+                  groups[groupName].push({ href, text });
+                });
+
+                // 產生階層式 <optgroup>
+                for (let gName in groups) {
+                  const optgroup = document.createElement('optgroup');
+                  optgroup.label = `📁 ${gName}`;
+                  groups[gName].forEach(item => {
+                    const opt = document.createElement('option');
+                    opt.value = item.href;
+                    opt.innerText = ` └ ${item.text}`;
+                    optgroup.appendChild(opt);
+                  });
+                  select.appendChild(optgroup);
                 }
-              }
+
+                // 自動預選最新的一篇
+                if (!location.hash || location.hash === '#/' || location.hash === '') {
+                  const firstOpt = select.querySelector('option[value]');
+                  if (firstOpt && firstOpt.value) {
+                    select.value = firstOpt.value;
+                    location.href = firstOpt.value;
+                  }
+                } else {
+                  select.value = location.hash;
+                }
+              }, 300);
             }
           });
         }
@@ -114,10 +152,7 @@
     }
   </script>
 
-  <!-- Docsify 核心 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-
-  <!-- 相關外掛 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 </body>
