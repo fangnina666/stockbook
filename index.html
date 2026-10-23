@@ -4,17 +4,40 @@
   <meta charset="UTF-8" />
   <title>StockBook</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- 引入 Docsify Vue 佈景主題 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
-
-  <!-- 【新增 1】引入 Docsify Vue 佈景主題（提升整體排版質感） -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
-  <!-- 可選：折疊側欄樣式 -->
+  
+  <!-- 側邊欄折疊樣式 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.css" />
 
   <style>
-    /* 保險：強制頁面可垂直捲動 */
+    /* 強制頁面可垂直捲動 */
     html, body { height: 100%; }
     body { overflow-y: auto; }
+    
+    /* 下拉選單美化樣式 */
+    .sidebar-report-select {
+      padding: 12px 10px;
+      background: #f8f9fa;
+      border-bottom: 1px solid #e1e4e8;
+      margin-bottom: 10px;
+    }
+    .sidebar-report-select label {
+      font-size: 13px;
+      font-weight: bold;
+      color: #333;
+    }
+    .sidebar-report-select select {
+      width: 100%;
+      margin-top: 6px;
+      padding: 6px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 13px;
+      background: #fff;
+      cursor: pointer;
+    }
   </style>
 
   <!-- Google tag (gtag.js) -->
@@ -30,48 +53,72 @@
   <div id="app">Loading…</div>
 
   <script>
+    // 下拉選單跳轉邏輯
+    function jumpToReport(selectElement) {
+      if (selectElement.value) {
+        location.href = selectElement.value;
+      }
+    }
+
     window.$docsify = {
       name: 'StockBook',
-      /* 如果是 GitHub Pages 的 project site，請改成你的專案子路徑，例：'/stockbook/' */
-      /* 不要加 '#/' */
       basePath: '/stockbook/',
-
       homepage: 'README.md',
       loadSidebar: true,
       subMaxLevel: 3,
-      sidebarDisplayLevel: 3,   // 預設展開到 年/月/日
+      sidebarDisplayLevel: 3,
       search: {
         paths: 'auto',
         placeholder: '搜尋報告…',
         noData: '沒有找到結果',
         maxAge: 86400000
-      }
+      },
+      // 透過 Docsify 外掛在網頁載入時自動把下拉選單插入側邊欄最上方
+      plugins: [
+        function (hook, vm) {
+          hook.doneEach(function () {
+            const sidebar = document.querySelector('.sidebar-nav');
+            if (sidebar && !document.getElementById('md-select')) {
+              const selectContainer = document.createElement('div');
+              selectContainer.className = 'sidebar-report-select';
+              selectContainer.innerHTML = `
+                <label for="md-select">📂 快速選擇報告：</label><br>
+                <select id="md-select" onchange="jumpToReport(this)">
+                  <!-- 🟢 請在這裡維護你的報告清單（最新的排在最上面） -->
+                  <option value="#/reports_his/2026/10/2026-10-22">2026-10-22 異常籌碼分析</option>
+                  <option value="#/reports_his/2026/10/2026-10-21">2026-10-21 異常籌碼分析</option>
+                  <option value="#/reports_his/2026/10/2026-10-20">2026-10-20 異常籌碼分析</option>
+                </select>
+              `;
+              sidebar.insertBefore(selectContainer, sidebar.firstChild);
+            }
+
+            // 自動預選或同步當前頁面
+            const select = document.getElementById('md-select');
+            if (select) {
+              if (!location.hash || location.hash === '#/' || location.hash === '') {
+                select.selectedIndex = 0;
+                location.href = select.options[0].value; // 剛進站自動跳轉到最新一篇
+              } else {
+                for (let i = 0; i < select.options.length; i++) {
+                  if (location.hash.includes(select.options[i].value.replace('#', ''))) {
+                    select.selectedIndex = i;
+                    break;
+                  }
+                }
+              }
+            }
+          });
+        }
+      ]
     }
   </script>
 
-  <!-- 只要載一次 docsify 核心！ -->
+  <!-- Docsify 核心 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
 
-  <!-- Plugin 需在 docsify 後面載入 -->
+  <!-- 相關外掛 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
-
-  <!-- 在你的網頁中加入這段 HTML 容器 -->
-  <div style="text-align: center; margin-top: 20px; font-size: 14px; color: #666;">
-    👀 本站總瀏覽人次：<span id="visit-count">載入中...</span>
-  </div>
-  
-  <!-- 搭配這段 JavaScript 自動抓取與累加次數 -->
-  <script>
-    fetch('https://api.countapi.xyz/hit/fangnina666-stockbook/visits')
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById('visit-count').innerText = data.value;
-      })
-      .catch(error => {
-        document.getElementById('visit-count').innerText = '計算中';
-      });
-</script>
-
 </body>
 </html>
