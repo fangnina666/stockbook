@@ -60,11 +60,14 @@
       loadSidebar: true,
       subMaxLevel: 3,
       sidebarDisplayLevel: 3,
+      // 確保搜尋設定完整
       search: {
+        maxAge: 86400000, // 過期時間，單位毫秒（1天）
         paths: 'auto',
         placeholder: '搜尋報告…',
-        noData: '沒有找到結果',
-        maxAge: 86400000
+        noData: '沒有找到結果！',
+        // 避開 basePath 可能造成的路徑抓取錯誤
+        depth: 6
       },
       plugins: [
         function (hook, vm) {
@@ -79,7 +82,14 @@
                   <option value="">-- 載入全部報告中 --</option>
                 </select>
               `;
-              sidebar.insertBefore(selectContainer, sidebar.firstChild);
+              
+              // 插入在搜尋框下方或側邊欄最上方，確保不影響 .search 區塊
+              const searchBox = document.querySelector('.sidebar .search');
+              if (searchBox) {
+                searchBox.after(selectContainer);
+              } else {
+                sidebar.insertBefore(selectContainer, sidebar.firstChild);
+              }
 
               // 自動抓取側邊欄內的所有連結與階層，轉化為下拉選單的 optgroup 分群
               setTimeout(() => {
@@ -90,25 +100,20 @@
                 const sidebarNav = document.querySelector('.sidebar-nav');
                 if (!sidebarNav) return;
 
-                // 抓取側邊欄的所有li或夾層，透過年份與月份建立階層群組 (optgroup)
                 const links = sidebarNav.querySelectorAll('a');
-                let currentGroup = null;
                 let groups = {};
 
                 links.forEach(link => {
                   const href = link.getAttribute('href');
                   const text = link.innerText.trim();
 
-                  // 過濾掉首頁或非報告的連結
                   if (!href || href.includes('README') || href.includes('Uindex') || text === '首頁' || text === '報告列表') return;
 
-                  // 嘗試從文字或連結路徑解析出 年份 / 月份 階層
                   let groupName = '其他報告';
                   const match = href.match(/(\d{4})[/-](\d{2})/);
                   if (match) {
                     groupName = `${match[1]} 年 ${match[2]} 月`;
                   } else {
-                    // 從文字找日期格式
                     const textMatch = text.match(/(\d{4})[.-](\d{2})/);
                     if (textMatch) {
                       groupName = `${textMatch[1]} 年 ${textMatch[2]} 月`;
@@ -121,7 +126,6 @@
                   groups[groupName].push({ href, text });
                 });
 
-                // 產生階層式 <optgroup>
                 for (let gName in groups) {
                   const optgroup = document.createElement('optgroup');
                   optgroup.label = `📁 ${gName}`;
@@ -134,7 +138,6 @@
                   select.appendChild(optgroup);
                 }
 
-                // 自動預選最新的一篇
                 if (!location.hash || location.hash === '#/' || location.hash === '') {
                   const firstOpt = select.querySelector('option[value]');
                   if (firstOpt && firstOpt.value) {
