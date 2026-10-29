@@ -2,14 +2,17 @@
 - 報告列表
   - 2026 年
     - 10 月
-      - 2026-10-28
+      - 2026-10-29
         - [wavescore-zhi-biao-shuo-ming-wen-jian](/reports_his/wavescore-zhi-biao-shuo-ming-wen-jian.md)
+        - [📌 選股摘要 (20261029)](/reports_his/result_combined_reco_20261029.md)
+        - [email_body](/reports_his/email_body.md)
+        - [README](/reports_his/README.md)
+      - 2026-10-28
         - [result_美股_20261028_035501](/reports_his/result_美股_20261028_035501.md)
         - [result_法人進出_20261028](/reports_his/result_法人進出_20261028.md)
         - [result_法人偷偷買_20261028](/reports_his/result_法人偷偷買_20261028.md)
+        - [result_台股券商分點_20261028](/reports_his/result_台股券商分點_20261028.md)
         - [📌 選股摘要 (20261028)](/reports_his/result_combined_reco_20261028.md)
-        - [email_body](/reports_his/email_body.md)
-        - [README](/reports_his/README.md)
       - 2026-10-27
         - [result_美股_20261027_033840](/reports_his/result_美股_20261027_033840.md)
         - [result_法人進出_20261027](/reports_his/result_法人進出_20261027.md)
