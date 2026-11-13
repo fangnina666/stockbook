@@ -4,6 +4,7 @@
     - 11 月
       - 2026-11-13
         - [wavescore-zhi-biao-shuo-ming-wen-jian](/reports_his/wavescore-zhi-biao-shuo-ming-wen-jian.md)
+        - [result_美股_20261113_045936](/reports_his/result_美股_20261113_045936.md)
         - [📌 選股摘要 (20261113)](/reports_his/result_combined_reco_20261113.md)
         - [email_body](/reports_his/email_body.md)
         - [README](/reports_his/README.md)
