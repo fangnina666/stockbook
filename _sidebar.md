@@ -4,12 +4,14 @@
     - 11 月
       - 2026-11-17
         - [wavescore-zhi-biao-shuo-ming-wen-jian](/reports_his/wavescore-zhi-biao-shuo-ming-wen-jian.md)
+        - [📌 選股摘要 (20261117)](/reports_his/result_combined_reco_20261117.md)
         - [email_body](/reports_his/email_body.md)
         - [README](/reports_his/README.md)
       - 2026-11-16
         - [result_美股_20261116_044052](/reports_his/result_美股_20261116_044052.md)
         - [result_法人進出_20261116](/reports_his/result_法人進出_20261116.md)
         - [result_法人偷偷買_20261116](/reports_his/result_法人偷偷買_20261116.md)
+        - [result_台股券商分點_20261116](/reports_his/result_台股券商分點_20261116.md)
       - 2026-11-15
         - [result_美股_20261115_044457](/reports_his/result_美股_20261115_044457.md)
       - 2026-11-14
