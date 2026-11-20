@@ -2,11 +2,12 @@
 - 報告列表
   - 2026 年
     - 11 月
-      - 2026-11-19
+      - 2026-11-20
         - [wavescore-zhi-biao-shuo-ming-wen-jian](/reports_his/wavescore-zhi-biao-shuo-ming-wen-jian.md)
-        - [📌 選股摘要 (20261119)](/reports_his/result_combined_reco_20261119.md)
         - [email_body](/reports_his/email_body.md)
         - [README](/reports_his/README.md)
+      - 2026-11-19
+        - [📌 選股摘要 (20261119)](/reports_his/result_combined_reco_20261119.md)
       - 2026-11-18
         - [result_美股_20261118_055142](/reports_his/result_美股_20261118_055142.md)
         - [result_法人進出_20261118](/reports_his/result_法人進出_20261118.md)
